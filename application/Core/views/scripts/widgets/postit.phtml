@@ -1,0 +1,246 @@
+<style>
+#postit-content_counter {
+   font-size: 11px;
+   color: #32627B;
+   margin: 8px 0 6px 0;
+   padding: 0;
+   font-size: 10px;
+}
+                                        
+#postit-content_count {
+   font-size: 10px;
+}
+                                        
+#postit-res {
+   margin: 3px 0 0 0;
+}
+                                        
+#postit-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   filter:alpha(opacity=70);
+   -moz-opacity:0.7;
+   -khtml-opacity: 0.7;
+   opacity: 0.7;
+   z-index: 5000;
+   display: none;
+}
+
+#postitcontainer {
+   position: fixed;
+   top: 20px;
+   padding: 40px 0 0 120px;
+}
+
+h3#postit-title {
+                                          margin: 0 0 0 37px ;
+                                          font-size: 28px;
+                                          color: #efefef;
+                                          position: relative;
+                                          z-index: 10001;
+                                          
+                                        }
+                                        .label-result {
+                                          position: relative;
+                                          top: -4px;
+                                          margin: 0 0 0 20px ;
+                                        }
+                                        .postit-date {
+                                          font-weight: bold;
+                                          margin: 0 0 4px 0;
+                                          padding: 0 0 6px 0;
+                                          border-bottom: 1px solid #F5AA19;
+                                        text-shadow: 0 1px 1px #fff;
+                                        }
+.postit {
+    overflow: auto;
+    position :relative;
+    float: left;
+    margin : 40px 0 0 40px;
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    color: #000;
+    z-index: 9999;
+    padding: 10px;                                        
+    font-size: 11px;
+    -moz-box-shadow: 0 0 5px #000;
+    -webkit-box-shadow: 0 0 5px #000;
+                                        
+  box-shadow: 0 0 5px #000;
+  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, rgb(244, 169, 39) ),
+        color-stop( 0.200, rgb(254, 225, 40) ),
+        color-stop( 1.0, rgb(254, 238, 40) ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        rgb(244, 169, 39), 
+        rgb(254, 225, 40) 20.0%,
+        rgb(254, 238, 40) );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        rgb(244, 169, 39), 
+        rgb(254, 225, 40) 20.0%,
+        rgb(254, 238, 40) );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        rgb(244, 169, 39), 
+        rgb(254, 225, 40) 20.0%,
+        rgb(254, 238, 40) );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        rgb(244, 169, 39), 
+        rgb(254, 225, 40) 20.0%,
+        rgb(254, 238, 40) );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        rgb(244, 169, 39), 
+        rgb(254, 225, 40) 20.0%,
+        rgb(254, 238, 40) );
+}          
+
+.clearfix {
+	height: 20px;
+}
+
+#postit-view {
+	margin-bottom: 6px;
+}
+</style>
+
+
+
+<div class="widget">
+    <textarea name="postit-content" id="postit-content" class="counter" cols="1" rows="3" style="max-height: 200px; width:200px;"></textarea>
+    <div class="clearfix"></div>
+    <button class="btn btn-small btn-gebo" id="postit-send">Enregistrer</button>
+    <button class="btn btn-small" id="postit-view">Afficher les post-it <span id="postit-count" class="label label-success">3</span></button>
+</div>
+
+
+<?php 
+$script = <<<SCRIPT
+$('#postit-content').counter({
+	goal : 120
+});
+$('#postit-content').autosize();
+                                        
+                                        
+(function updatePostitCount() {
+  $.post("/Core/widgets/postit",
+         {
+            "do" : 'count',
+         },
+         function (r) {
+             if(r.status) {
+                $('#postit-count').html(r.count);
+                setTimeout(updatePostitCount, 10000);
+             } else {
+                alert( r.message );
+                return false;
+             }
+         })
+})();
+                                        
+$('#postit-send').bind('click', function(){
+    $.post("/Core/widgets/postit",
+    {
+        "do" : 'save',
+        "content" : $('#postit-content').val(),
+    },
+    function (r) {
+       if(r.status) {
+           $('#postit-view').after('<div id="postit-res"></div>');
+           $('#postit-res').attr('class','alert-message success');
+           $('<a class="close" href="#postit-res">×</a>').prependTo($('#postit-res'));
+           $('<span class="small">' + r.message + '</span>').appendTo($('#postit-res'));
+           $('#postit-content').val('');
+           $('#postit-count').html(parseInt($('#postit-count').html())+1);
+       } else {
+           $('#postit-view').after('<div id="postit-res"></div>');
+           $('#postit-res').attr('class','alert-message error');
+           $('<a class="close" href="#postit-res">×</a>').prependTo($('#postit-res'));
+           $('<span class="small">' + r.message + '</span>').appendTo($('#postit-res'));
+           return false;
+       }
+    }
+    );
+});
+                                        
+$('#postit-view').bind('click', function(){
+    var overlay = jQuery('<div id="postit-overlay"> </div>');
+    overlay.appendTo($('div.container'));
+    overlay.fadeIn(200);
+    overlay.bind('click', function (){
+        overlay.fadeOut(200);
+        $('#postitcontainer').remove();
+    });
+    $('#postitcontainer').bind('click', function (){
+        overlay.fadeOut(200);
+        $('#postitcontainer').remove();
+    });                                        
+    $.post("/Core/widgets/postit",
+        {
+           "do" : 'list',
+        },
+        function (r) {
+	        if(r.status) {
+	           jQuery('<div id="postitcontainer"> </div>').appendTo($('.container'));
+	           jQuery('<h3 id="postit-title">Post-It &trade;</h3>').appendTo($('#postitcontainer'));
+	           $.each(r.content, function(key, value) {
+	                jQuery('<div id="postit-' + value.id + '" class="postit"><a class="close postit-close" rel="' + value.id + '">×</a><div class="postit-date">' + value.timestamp + '</div>' + value.content + '</div>').appendTo($('#postitcontainer'));
+	           });
+	        } else {
+	                alert( r.message );
+	                return false;
+	        }
+        }
+    );
+});
+		
+		
+		
+                                        $('.postit-close').live('click', function(e) {
+                                            var elt = $(this);
+                                            $.post("/Core/widgets/postit",
+                                                    {
+                                                        "postit" : $(this).attr('rel'),
+                                                        "do" : "delete"
+                                                    },
+                                                     function (r) {
+                                                         if( r == 'no_auth' ){
+                                                            document.location.href = '/';
+                                                         } else if( r == 'no_privilege' ){
+                                                            alert('no privilege');
+                                                         } else if(r.status) {
+                                                             elt.parent().fadeOut(800);
+                                                             jQuery('<span class="label label-success label-result">Post-It supprimé</span>').appendTo($('#postit-title'));
+                                                             $('.label-result').fadeOut(2400);
+                                                             count = parseInt($('#postit-count').html())-1;
+                                                             $('#postit-count').html(count);
+                                                             if (!count) {
+                                                                 $('#postit-overlay').fadeOut(1600);
+                                                                 $('#postitcontainer').remove();
+                                                             }
+                                                         } else {
+                                                             alert( r.message );
+                                                             return false;
+                                                         }
+                                                     }
+                                                 );
+                                        });
+SCRIPT;
+
+$this->inlineScript()->appendScript($script);
