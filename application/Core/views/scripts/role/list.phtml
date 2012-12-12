@@ -1,0 +1,31 @@
+
+<a href="<?php echo $this->url(array(), 'coreRoleNew') ?>" class="btn small">
+<?php echo $this->translate('core_role_button_new')?>
+</a>
+
+<table class="condensed-table zebra-striped">
+  <thead>
+    <tr>
+      <th><?php echo $this->translate('core_role_table_th_name')?></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<?php foreach($this->roles as $role) : ?>
+  <tr>
+    <td><?php echo $role->getLabel() ?></td>
+    <td>
+   <a class="btn small" 
+    href="<?php echo $this->url(array( 'rid' => $role->getId()), 'coreRoleDelete')?>"><?php echo $this->translate('core_role_button_delete')?></a>
+   <a class="btn small" 
+    href="<?php echo $this->url(array( 'rid' => $role->getId()), 'coreRoleEdit')?>"><?php echo $this->translate('core_role_button_edit')?></a>
+    </td>
+  </tr>  
+<?php endforeach;?>
+  </tbody>
+</table>
+
+
+
+
+

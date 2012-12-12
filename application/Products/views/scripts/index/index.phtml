@@ -1,0 +1,33 @@
+<a href="<?php echo $this->url(array(), 'productsIndexNew') ?>" class="btn small">
+<?php echo $this->translate('products_products_button_new')?>
+</a>
+
+<table class="condensed-table zebra-striped">
+<thead>
+<th>Réf</th>
+<th>Nom</th>
+<th>Prix</th>
+<th>Stock</th>
+<th>Edition</th>
+<th>Suppression</th>
+</thead>
+<?php 
+
+foreach($this->produits as $produit) {
+	echo '<tr>';
+	echo '<td>'.$produit->getprodReference().'</td>';
+	echo '<td>'.$produit->getprodDesignation().'</td>';
+	echo '<td>'.$produit->getprodPrix().'</td>';
+	echo '<td>'.$produit->getprodStock().'</td>';
+	echo '<td>' .'</td>';
+	
+	echo '<td><a class="close"
+			href="/Products/delete/:'. $produit->getprodId().'">×</a>
+		  </td>';
+	echo '</tr>';
+}
+?>
+</table>
+
+
+
