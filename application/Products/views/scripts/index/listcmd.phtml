@@ -1,0 +1,36 @@
+<a href="<?php echo $this->url(array(), 'productsIndexList') ?>" class="btn small">
+<?php echo $this->translate('products_commandes_button_new')?>
+</a>
+
+<table class="condensed-table zebra-striped">
+<thead>
+<th>Réf</th>
+<th>Client</th>
+<th>Date</th>
+<th>Etat</th>
+<th>Montant H.T.</th>
+<th>Payé</th>
+<th>Suppression</th>
+</thead>
+<?php 
+
+foreach($this->commandes as $commande) {
+	echo '<tr>';
+	echo '<td>'.$commande->getcommandeRef().'</td>';
+	echo '<td>'.$commande->getcommandeClientId().'</td>'; // client Nom Prenom
+	echo '<td>'.$commande->getcommandeDate().'</td>';
+	echo '<td>'.$commande->getcommandeEtatId().'</td>';
+	echo '<td>'.$commande->getcommandeMontantHt().'</td>';
+	echo '<td>'.$commande->getCommandeReglement().'</td>';
+	echo '<td>' .'</td>';
+	
+	echo '<td><a class="close"
+			href="/Products/delete/:'. $commande->getCommandeId().'">×</a>
+		  </td>';
+	echo '</tr>';
+}
+?>
+</table>
+
+
+
