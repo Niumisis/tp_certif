@@ -1,0 +1,33 @@
+
+<a href="<?php echo $this->url(array(), 'coreUserNew') ?>" class="btn small">
+<?php echo $this->translate('core_user_button_new')?>
+</a>
+
+<table id="users-list" class="condensed-table zebra-striped">
+  <thead>
+    <tr>
+      <th><?php echo $this->translate('core_user_table_th_name')?></th>
+      <th><?php echo $this->translate('core_user_table_th_login')?></th>
+      <th><?php echo $this->translate('core_user_table_th_email')?></th>
+      <th><?php echo $this->translate('core_user_table_th_role')?></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<?php foreach($this->users as $user) : ?>
+  <tr>
+    <td><?php echo "{$user->getFirstname()} {$user->getLastname()}" ?></td>
+    <td><?php echo $user->getLogin() ?></td>
+    <td><?php echo $user->getEmail() ?></td>
+    <td><?php echo $user->getRole()->getLabel() ?></td>
+    <td><a class="close" 
+    href="<?php echo $this->url(array( 'uid' => $user->getId()), 'coreUserDelete')?>">×</a></td>
+  </tr>  
+<?php endforeach;?>
+  </tbody>
+</table>
+
+
+
+
+
