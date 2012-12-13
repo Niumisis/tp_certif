@@ -1,0 +1,32 @@
+<?php 
+$this->headTitle(
+  		$this->translate('title_index_index')
+  	);
+
+$script = <<<SCRIPT
+	$('#ajax-index').load('/Core/ajax/index');
+	
+
+	(function updateTime() {
+		$.get(
+		    '/Core/ajax/json',
+			function(r) {
+				if (r.status) {
+					$('#ajax-json').html('<p>' + r.content + '</p>');
+					setTimeout(updateTime, 10000);
+				} else {
+					alert(r.content);
+				}
+			}
+		)
+	})();
+
+SCRIPT;
+
+$this->inlineScript()->appendScript($script);
+
+?>
+
+<div id="ajax-index"></div>
+
+<div id="ajax-json"></div>

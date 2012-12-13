@@ -1,0 +1,128 @@
+﻿[13-Dec-2012 10:13:02 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/sha in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:13:02 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/sha in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:13:03 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/sha in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:13:52 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/sha in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:14:57 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir must be a directory' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(154): Zend_Cache::throwException('cache_dir must ...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/sha in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:15:49 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir is not writable' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(157): Zend_Cache::throwException('cache_dir is no...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/share/Z in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 10:16:21 UTC] PHP Fatal error:  Uncaught exception 'Zend_Cache_Exception' with message 'cache_dir is not writable' in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php:209
+Stack trace:
+#0 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(157): Zend_Cache::throwException('cache_dir is no...')
+#1 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Backend/File.php(121): Zend_Cache_Backend_File->setCacheDir('/home/www/tp_ce...')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(153): Zend_Cache_Backend_File->__construct(Array)
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('File', Array, false, false)
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache/Manager.php(173): Zend_Cache::factory('Core', 'File', Array, Array, false, false, false)
+#5 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Resource/Translate.php(105): Zend_Cache_Manager->getCache('i18n')
+#6 /usr/local/zend/share/Z in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Cache.php on line 209
+[13-Dec-2012 13:16:48 UTC] PHP Fatal error:  Call to undefined method Core_Model_User::getRole() in /home/www/tp_certif/application/Core/views/layouts/layout.phtml on line 66
+[13-Dec-2012 13:16:48 UTC] PHP Stack trace:
+[13-Dec-2012 13:16:48 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[13-Dec-2012 13:16:48 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[13-Dec-2012 13:16:48 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[13-Dec-2012 13:16:48 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[13-Dec-2012 13:16:48 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[13-Dec-2012 13:16:48 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[13-Dec-2012 13:16:48 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[13-Dec-2012 13:16:48 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[13-Dec-2012 13:16:48 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[13-Dec-2012 13:16:48 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[13-Dec-2012 13:18:49 UTC] PHP Fatal error:  Call to undefined method Core_Model_User::getRole() in /home/www/tp_certif/application/Core/views/layouts/layout.phtml on line 66
+[13-Dec-2012 13:18:49 UTC] PHP Stack trace:
+[13-Dec-2012 13:18:49 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[13-Dec-2012 13:18:49 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[13-Dec-2012 13:18:49 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[13-Dec-2012 13:18:49 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[13-Dec-2012 13:18:49 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[13-Dec-2012 13:18:49 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[13-Dec-2012 13:18:49 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[13-Dec-2012 13:18:49 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[13-Dec-2012 13:18:49 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[13-Dec-2012 13:18:49 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[13-Dec-2012 13:19:23 UTC] PHP Fatal error:  Call to undefined method Core_Model_User::getRole() in /home/www/tp_certif/application/Core/views/scripts/user/list.phtml on line 22
+[13-Dec-2012 13:19:23 UTC] PHP Stack trace:
+[13-Dec-2012 13:19:23 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[13-Dec-2012 13:19:23 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[13-Dec-2012 13:19:23 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[13-Dec-2012 13:19:23 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[13-Dec-2012 13:19:23 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[13-Dec-2012 13:19:23 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[13-Dec-2012 13:19:23 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[13-Dec-2012 13:19:23 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[13-Dec-2012 13:19:23 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[13-Dec-2012 13:19:23 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[13-Dec-2012 13:19:23 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[13-Dec-2012 13:19:23 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[13-Dec-2012 13:19:23 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[13-Dec-2012 13:20:09 UTC] PHP Fatal error:  Class 'Core_Model_Mapper_Role' not found in /home/www/tp_certif/application/Core/forms/Useradd.php on line 91
+[13-Dec-2012 13:20:09 UTC] PHP Stack trace:
+[13-Dec-2012 13:20:09 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[13-Dec-2012 13:20:09 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[13-Dec-2012 13:20:09 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[13-Dec-2012 13:20:09 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[13-Dec-2012 13:20:09 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[13-Dec-2012 13:20:09 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[13-Dec-2012 13:20:09 UTC] PHP   7. UserController->newAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[13-Dec-2012 13:20:09 UTC] PHP   8. Zend_Form->__construct() /home/www/tp_certif/application/Core/controllers/UserController.php:54
+[13-Dec-2012 13:20:09 UTC] PHP   9. Core_Form_Useradd->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[13-Dec-2012 13:20:38 UTC] PHP Fatal error:  Call to a member function setDecorators() on a non-object in /home/www/tp_certif/application/Core/views/scripts/user/new.phtml on line 107
+[13-Dec-2012 13:20:38 UTC] PHP Stack trace:
+[13-Dec-2012 13:20:38 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[13-Dec-2012 13:20:38 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[13-Dec-2012 13:20:38 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[13-Dec-2012 13:20:38 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[13-Dec-2012 13:20:38 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[13-Dec-2012 13:20:38 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[13-Dec-2012 13:20:38 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[13-Dec-2012 13:20:38 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[13-Dec-2012 13:20:38 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[13-Dec-2012 13:20:38 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[13-Dec-2012 13:20:38 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[13-Dec-2012 13:20:38 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[13-Dec-2012 13:20:38 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
