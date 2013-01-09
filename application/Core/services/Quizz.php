@@ -51,7 +51,7 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	$listeQuestions = new Core_Model_Mapper_ListeQuestions();
     	$questions = $listeQuestions->fetchall(array('lst_ques_id_questionnaire=?' => $idQuestionnaire));
     	while($questions->valid() == true) {
-    		$tabQuestions[] = $questions->current()->getLstQuesId();
+    		$tabQuestions[] = $questions->current()->getLstQuesIdQues();
     		$questions->next();
     	}
     	return $tabQuestions;
@@ -183,31 +183,52 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	if (isset($tab['precedent'])) {
     		return $this->prev((int) $idReponse);
     	} else {
-    		return $this->next();
+    		return $this->next((int) $idReponse);
     	}
     }
 
     // question suivante
-    public function next() {
+    public function next($lastid) {
     	if (isset($this->getSessionReponse()->questionnaireId)) {
-	    	$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
-
-	    	$dernierEnregistrement = end($this->getSessionReponse()->questions);
-	    	
-	    	// on renvoi l'enregistrement apres le dernier enregistré
-	    	if ((in_array($dernierEnregistrement['id'], $questions)) && (end($questions) != $dernierEnregistrement['id'])) {
-		    	foreach($questions as $id) {
-		    		if ($id == $dernierEnregistrement['id']) {
-		    			return current($questions);
-		    		}
-		    	}
-	    	} else {
-	    		return end($questions);
-	    	}
+    		$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
+    		
+    		if (count($questions) > 1) {
+  
+    			for ($i=0; $i <= count($questions); $i++) {
+    				if (current($questions) == $lastid) {
+    					current($questions);
+    					break;
+    				}
+    				next($questions);
+    			}
+     			return next($questions);
+    		} else {
+    			return end($questions);
+    		}
     	} else {
     		return false;
     	}
     }
+//     public function next() {
+//     	if (isset($this->getSessionReponse()->questionnaireId)) {
+// 	    	$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
+
+// 	    	$dernierEnregistrement = end($this->getSessionReponse()->questions);
+	    	
+// 	    	// on renvoi l'enregistrement apres le dernier enregistré
+// 	    	if ((in_array($dernierEnregistrement['id'], $questions)) && (end($questions) != $dernierEnregistrement['id'])) {
+// 		    	foreach($questions as $id) {
+// 		    		if ($id == $dernierEnregistrement['id']) {
+// 		    			return current($questions);
+// 		    		}
+// 		    	}
+// 	    	} else {
+// 	    		return end($questions);
+// 	    	}
+//     	} else {
+//     		return false;
+//     	}
+//     }
     
     // question precedente
 //     public function prev() {
@@ -231,7 +252,7 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	if (isset($this->getSessionReponse()->questionnaireId)) {
     		$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
     		if (count($questions) > 1) {
-  
+  				$debutPos = reset($questions);
     			for ($i=0; $i <= count($questions); $i++) {
     				if (current($questions) == $lastid) {
     					current($questions);
@@ -239,7 +260,11 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     				}
     				next($questions);
     			}
-     			return prev($questions);
+
+    			if ($debutPos != current($questions)) 
+    				return prev($questions);
+    			else
+     				return end($questions);
     		} else {
     			return reset($questions);
     		}

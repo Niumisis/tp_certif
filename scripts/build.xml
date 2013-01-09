@@ -12,6 +12,10 @@
   <mkdir dir="${project.basedir}/build/logs" />
   <mkdir dir="${project.basedir}/build/pdepend" />
   <mkdir dir="${project.basedir}/build/phpdox" />
+  <mkdir dir="${project.basedir}/tests/unit" />
+  <mkdir dir="${project.basedir}/tests/functionnal" />
+  <mkdir dir="${project.basedir}/tests/integration" />
+
 </target>
 
 
