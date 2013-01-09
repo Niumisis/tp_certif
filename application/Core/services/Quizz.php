@@ -191,7 +191,6 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     public function next($lastid) {
     	if (isset($this->getSessionReponse()->questionnaireId)) {
     		$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
-    		
     		if (count($questions) > 1) {
   
     			for ($i=0; $i <= count($questions); $i++) {
