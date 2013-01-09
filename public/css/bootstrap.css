@@ -11,6 +11,8 @@
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
  * ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 html,body {
 	margin: 0;
 	padding: 0;
@@ -3259,4 +3261,11 @@ dd#submit-element input#submit {
 
 dd#submit-element input#submit:hover {
 	background: #4967A3;
+}
+
+reponses {
+	background-color:red;
+	color:blue;
+	padding-bottom:10px;
+	display: block;
 }

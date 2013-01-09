@@ -45,14 +45,7 @@ class Core_Service_User extends My_Service_ServiceAbstract
      * @var Core_Model_Mapper_User
      */
     private $userMapper;
-    /**
-     * Le mapper role assure le lien avec la persistence des données
-     * des rôles (groupes d'utilisateurs) en base de données
-     *
-     * @var Core_Model_Mapper_Role
-     */
-	private $roleMapper;
-	
+
     /**
      * Assure l'identification d'un utilisateur pour un identifiant et
      * un mot de passe donné en utilisant Zend_Auth.
@@ -77,16 +70,17 @@ class Core_Service_User extends My_Service_ServiceAbstract
      */
     public function authenticate($login, $password)
     {
-    	
+
         $auth = Zend_Auth::getInstance();
         $authAdapter = new Zend_Auth_Adapter_DbTable();
-        $authAdapter->setTableName('user')->setIdentityColumn('u_login')->setCredentialColumn('u_password')->setIdentity($login)->setCredential($password)->setCredentialTreatment('SHA1(?)');
+        $authAdapter->setTableName('tp_utilisateurs')->setIdentityColumn('user_login')->setCredentialColumn('user_pwd')->setIdentity($login)->setCredential($password)->setCredentialTreatment('(?)');
         $result = $auth->authenticate($authAdapter);
         if (Zend_Auth_Result::SUCCESS === $result->getCode()) {
             $userRow = $authAdapter->getResultRowObject();
             $userMapper = new Core_Model_Mapper_User();
-            $user = $userMapper->find($userRow->u_id);
+            $user = $userMapper->find($userRow->user_id);
             $auth->getStorage()->write($user);
+
             return true;
         }
 
@@ -100,7 +94,7 @@ class Core_Service_User extends My_Service_ServiceAbstract
     {
         Zend_Auth::getInstance()->clearIdentity();
     }
-    
+
     /**
      * Vérifie qu'une identité est enregistrée en session par Zend_Auth
      */
@@ -111,7 +105,7 @@ class Core_Service_User extends My_Service_ServiceAbstract
 
     public function getIdentity()
     {
-    	return Zend_Auth::getInstance()->getIdentity();
+        return Zend_Auth::getInstance()->getIdentity();
     }
     /**
      * Récupère un compte utilisateur en base de données à partir
@@ -156,6 +150,7 @@ class Core_Service_User extends My_Service_ServiceAbstract
         if ($result) {
             $this->getCache()->remove('userservicefetchall');
         }
+
         return $result;
     }
 
@@ -172,6 +167,7 @@ class Core_Service_User extends My_Service_ServiceAbstract
         if ($result) {
             $this->getCache()->remove('userservicefetchall');
         }
+
         return $result;
     }
 
@@ -200,31 +196,27 @@ class Core_Service_User extends My_Service_ServiceAbstract
     {
         $this->userMapper = $mapper;
     }
-    
-    /**
-     * INJECTED FACTORY
-     * Permet d'accéder, en lazy loading, au mapper de données
-     * des rôles
-     *
-     * @return Core_Model_Mapper_Role
-     */
-    public function getRoleMapper()
+
+    public function generateurPwd()
     {
-    	if (null === $this->roleMapper) {
-    		$this->roleMapper = new Core_Model_Mapper_Role();
-    	}
-    
-    	return $this->roleMapper;
-    }
-    
-    /**
-     * Point d'injection pour le mapper de données des rôles
-     *
-     * @param Core_Model_Mapper_Role $mapper
-     */
-    public function setRoleMapper($mapper)
-    {
-    	$this->roleMapper = $mapper;
+        $nb_lettres = rand(8, 10);
+        $pwd = '';
+        // 48 - 57 chiffres
+        // 64 90 caps + @
+        // 97 - 122
+        for ($i=0; $i < $nb_lettres; $i++) {
+            $tmp = rand(1, 3);
+
+            if ($tmp === 1) {
+                $tmp = rand(48, 57);
+            } elseif ($tmp === 2) {
+                $tmp = rand(64, 90);
+            } else {
+                $tmp = rand(97, 122);
+            }
+            $pwd .= chr($tmp);
+        }
+
+        return $pwd;
     }
 }
- 

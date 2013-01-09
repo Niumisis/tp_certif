@@ -37,38 +37,10 @@ class Core_Form_Useradd extends Zend_Form
                       )
               );
         $this->addElement($login);
-
-        $firstname = new Zend_Form_Element_Text('firstname');
-        $firstname->setRequired(true)
-                  ->addFilter(
-                       new Zend_Filter_StripTags()
-                  )
-                  ->addValidator(
-                          new Zend_Validate_StringLength(
-                              array('max' => 40)
-                          )
-                  );
-        $this->addElement($firstname);
-
-        $lastname = new Zend_Form_Element_Text('lastname');
-        $lastname->setRequired(true)
-                 ->addFilter(
-                       new Zend_Filter_StripTags()
-                  )
-                 ->addValidator(
-                          new Zend_Validate_StringLength(
-                              array('max' => 60)
-                          )
-                  );
-        $this->addElement($lastname);
-
-        $email = new Zend_Form_Element_Text('email');
-        $email->setRequired(true)
-
-              ->addValidator(
-                          new Zend_Validate_EmailAddress()
-                  );
-        $this->addElement($email);
+/*
+        $admin = new Zend_Form_Element_Checkbox('admin');
+        $admin->setLabel('Privilege pour la ressource ' . $resource);
+        $this->addElement($admin);
 
         $password = new Zend_Form_Element_Text('password');
         $password->setRequired(true)
@@ -85,18 +57,6 @@ class Core_Form_Useradd extends Zend_Form
                           new Zend_Validate_Identical('password')
                   );
         $this->addElement($passwordConf);
-
-       /* $roleElt = new Zend_Form_Element_Select('role');
-
-        $roleMapper = new Core_Model_Mapper_Role();
-        $roles = $roleMapper->fetchAll();
-        $rolesArr = array();
-        foreach ($roles as $role) {
-            $rolesArr[$role->getId()] = $role->getLabel();
-        }
-
-        $roleElt->addMultiOptions($rolesArr);
-        $this->addElement($roleElt);
 */
         $submit = new Zend_Form_Element_Submit('submit');
         $this->addElement($submit);

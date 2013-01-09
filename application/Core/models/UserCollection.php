@@ -24,4 +24,4 @@
  */
 class Core_Model_UserCollection extends My_Model_Collection
 {
-         }
+}

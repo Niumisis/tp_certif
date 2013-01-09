@@ -33,48 +33,52 @@ class Core_Model_Privilege
      * @var string
      */
     private $privileges;
-	/**
-	 * @return the $roleId
-	 */
-	public function getRoleId() {
-		return $this->roleId;
-	}
+    /**
+     * @return the $roleId
+     */
+    public function getRoleId()
+    {
+        return $this->roleId;
+    }
 
-	/**
-	 * @param number $roleId
-	 */
-	public function setRoleId($roleId) {
-		$this->roleId = $roleId;
-	}
+    /**
+     * @param number $roleId
+     */
+    public function setRoleId($roleId)
+    {
+        $this->roleId = $roleId;
+    }
 
-	/**
-	 * @return the $resourceName
-	 */
-	public function getResourceName() {
-		return $this->resourceName;
-	}
+    /**
+     * @return the $resourceName
+     */
+    public function getResourceName()
+    {
+        return $this->resourceName;
+    }
 
-	/**
-	 * @param string $resourceName
-	 */
-	public function setResourceName($resourceName) {
-		$this->resourceName = $resourceName;
-	}
+    /**
+     * @param string $resourceName
+     */
+    public function setResourceName($resourceName)
+    {
+        $this->resourceName = $resourceName;
+    }
 
-	/**
-	 * @return the $privileges
-	 */
-	public function getPrivileges() {
-		return $this->privileges;
-	}
+    /**
+     * @return the $privileges
+     */
+    public function getPrivileges()
+    {
+        return $this->privileges;
+    }
 
-	/**
-	 * @param string $privileges
-	 */
-	public function setPrivileges($privileges) {
-		$this->privileges = $privileges;
-	}
+    /**
+     * @param string $privileges
+     */
+    public function setPrivileges($privileges)
+    {
+        $this->privileges = $privileges;
+    }
 
-    
-    
 }

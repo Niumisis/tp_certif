@@ -24,15 +24,8 @@ class Core_Bootstrap extends Zend_Application_Module_Bootstrap
 
     protected function _initModulePlugins()
     {
-        $fc = Zend_Controller_Front::getInstance();
-        $fc->registerPlugin(new Core_Plugin_Auth());
+    //    $fc = Zend_Controller_Front::getInstance();
+     //   $fc->registerPlugin(new Core_Plugin_Auth());
     }
 
 }
-
-
-
-
-
-
-

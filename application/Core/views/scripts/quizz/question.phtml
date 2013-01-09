@@ -1,0 +1,115 @@
+<?php if ($this->error) :?>
+<div class="alert-message error">
+    <a class="close" href="#">×</a>
+    <p><?php echo $this->translate($this->errorMsg)?></p>
+</div>
+<?php 
+endif;
+
+if (isset($this->question)) {
+?>
+
+<h2>Question(s) r&eacute;pondu <?php echo $this->nbReponse.'/'.$this->nbQuestion; ?></h2>
+
+<div class="well" >
+<?php
+	if (@$this->question->getIntituleQuestions() != '') {
+		echo $this->question->getIntituleQuestions().'<br/>';
+	}
+	if (@$this->question->getImageUrlQuestions() != '') {
+		echo '<img src="'.$this->question->getImageUrlQuestions().'" alt="Image de la question'.$this->question->getIdQuestions().'"/><br/>';
+	}
+echo '</div>';	
+
+$this->form->clearDecorators();
+  
+  $fieldDecorators = array(
+  						   'ViewHelper',
+  							array(
+  						    	array( 'field' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'input'
+  						        )
+  						    ),
+  							array(
+  								'Label',
+  							    array(
+  							    	'class' => 'control-label'
+  							    )
+  							),
+  							'Errors',
+  							array(
+  						    	array( 'row' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'p',
+  						            'class' => 'form-row'
+  						        )
+  						    )
+  						    
+  						);
+  						
+ $fieldErrorDecorators = array(
+  						   'ViewHelper',
+  							array(
+  						    	array( 'field' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'input'
+  						        )
+  						    ),
+  						    'Errors',
+  							array(
+  								'Label',
+  							    array(
+  							    	'class' => 'control-label'
+  							    )
+  							),
+  							array(
+  						    	array( 'row' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'form-row clearfix error'
+  						        )
+  						    )
+  						    
+  						);
+  						
+  $buttonDecorators = array( 
+  	'ViewHelper',
+    array('HtmlTag', array('tag' => 'div', 'class' => 'input')),
+  );
+  
+  echo '<h2>R&eacute;ponse</h2>';
+  $this->form->reponse->clearDecorators()
+					  ->setAttrib('class', 'reponses')
+					  ->setDecorators($buttonDecorators);
+  
+  $this->form->question->setValue($this->question->getIdQuestions());
+  
+  $this->form->marquer->clearDecorators()
+  					  ->setLabel('core_quizz_form_label_marquer')
+  					  ->setAttrib('class', 'btn primary')
+  					  ->setDecorators($buttonDecorators);
+  
+  $this->form->precedent->clearDecorators()
+					  ->setLabel('core_quizz_form_label_precedent')
+					  ->setAttrib('class', 'btn primary')
+					  ->setDecorators($buttonDecorators);
+  
+  $this->form->suivant->clearDecorators()
+					  ->setLabel('core_quizz_form_label_suivant')
+					  ->setAttrib('class', 'btn primary')
+					  ->setDecorators($buttonDecorators);
+  					  
+  $this->form->setDecorators(
+					  	array(
+					  		'FormElements',
+					  		'Form'
+					  	))
+			  	->setAttrib('class', 'well')
+				->setAttrib( 'style', 'background-color:#EFF0FF');
+
+echo $this->form;
+}
+

@@ -70,29 +70,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $translate->setLocale($locale);
 
         $config = $this->getOptions();
-      
+
         $defaultLanguage = $config['resources']['translate']['default'];
 
         if (!$translate->isAvailable($locale->getLanguage())) {
             $translate->setLocale($defaultLanguage);
         }
     }
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

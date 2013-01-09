@@ -4,7 +4,7 @@
  * Controller d'identification
  *
  * Ce controller gère les actions en rapport avec
- * l'identification des utilisateurs 
+ * l'identification des utilisateurs
  * <ul>
  * <li>Connexion</li>
  * <li>Déconnexion</li>
@@ -16,7 +16,7 @@
  * Controller d'identification
  *
  * Ce controller gère les actions en rapport avec
- * l'identification des utilisateurs 
+ * l'identification des utilisateurs
  * <ul>
  * <li>Connexion</li>
  * <li>Déconnexion</li>
@@ -35,7 +35,7 @@ class AuthController extends Zend_Controller_Action
     /**
      * Connexion
      * @uses Core_Form_Signin Formulaire de connexion
-     * @uses Core_Service_UserApi 
+     * @uses Core_Service_UserApi
      */
     public function signinAction()
     {

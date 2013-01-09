@@ -73,25 +73,13 @@ endif;
   						$fieldErrorDecorators : $fieldDecorators
   					)
   					->setLabel('core_user_form_label_login');
-  					
-  $this->form->firstname->setDecorators(
-  						$this->form->firstname->hasErrors() ? 
+  		/*			
+  $this->form->admin->setDecorators(
+  						$this->form->admin->hasErrors() ? 
   						$fieldErrorDecorators : $fieldDecorators
   					)
-  					->setLabel('core_user_form_label_firstname');
-  					
-  $this->form->lastname->setDecorators(
-  						$this->form->lastname->hasErrors() ? 
-  						$fieldErrorDecorators : $fieldDecorators
-  					)
-  					->setLabel('core_user_form_label_lastname');
-  					
-  $this->form->email->setDecorators(
-  						$this->form->email->hasErrors() ? 
-  						$fieldErrorDecorators : $fieldDecorators
-  					)
-  					->setLabel('core_user_form_label_email');  
-  					
+  					->setLabel('core_user_form_label_admin');
+  	
   $this->form->password->setDecorators(
   						$this->form->password->hasErrors() ? 
   						$fieldErrorDecorators : $fieldDecorators
@@ -104,7 +92,7 @@ endif;
   					)
   					->setLabel('core_user_form_label_pwconf');
   		
-  
+  */
   $this->form->submit->clearDecorators()
   					  ->setLabel('core_user_form_label_submit')
   					  ->setAttrib('class', 'btn primary')
@@ -115,6 +103,6 @@ endif;
   		'FormElements',
   		'Form'
   	))
-  	->setAttrib('class', 'well');;
+  	->setAttrib('class', 'well');
 
 echo $this->form;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="www5-2" basedir="." default="build">
+<project name="tp_certif" basedir="." default="build">
 
 
 <target name="prepare">
@@ -68,7 +68,7 @@
   <exec executable="apigen">
     <arg line="--source ${project.basedir}/application"/>
     <arg line="--destination ${project.basedir}/build/api"/>
-    <arg line="--title 'Documentation du projet www5'"/>
+    <arg line="--title 'Documentation du projet tp_certif'"/>
     <arg line="--php no"/>
     <arg line="--download yes"/>
   </exec>

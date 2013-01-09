@@ -29,13 +29,11 @@ class Core_Model_Mapper_User extends Core_Model_Mapper_Abstract
 {
     protected $_dbTableClass = 'Core_Model_DbTable_User';
 
-    const COL_ID = 'u_id';
+    const COL_ID = 'user_id';
   //  const COL_ROLE_ID = 'r_id';
-    const COL_LOGIN = 'u_login';
-    const COL_PASSWORD = 'u_password';
-    const COL_EMAIL = 'u_email';
-    const COL_FIRSTNAME = 'u_firstname';
-    const COL_LASTNAME = 'u_lastname';
+    const COL_LOGIN = 'user_login';
+    const COL_PASSWORD = 'user_pwd';
+    const COL_ADMIN = 'user_admin';
 
     public function fetchAll()
     {
@@ -60,26 +58,22 @@ class Core_Model_Mapper_User extends Core_Model_Mapper_Abstract
         );*/
 
         $user = new Core_Model_User();
-        $user->setId($row[self::COL_ID]);
+        $user->setUserId($row[self::COL_ID]);
      //   $user->setRole($role);
-        $user->setLogin($row[self::COL_LOGIN]);
-        $user->setPassword($row[self::COL_PASSWORD]);
-        $user->setEmail($row[self::COL_EMAIL]);
-        $user->setFirstname($row[self::COL_FIRSTNAME]);
-        $user->setLastname($row[self::COL_LASTNAME]);
+        $user->setUserLogin($row[self::COL_LOGIN]);
+        $user->setUserPwd($row[self::COL_PASSWORD]);
+        $user->setUserAdmin($row[self::COL_ADMIN]);
 
         return $user;
     }
 
     public function objectToArray($user)
     {
-        $data[self::COL_ID] = $user->getId();
+        $data[self::COL_ID] = $user->getUserId();
      //   $data[self::COL_ROLE_ID] = $user->getRole()->getId();
-        $data[self::COL_LOGIN] = $user->getLogin();
-        $data[self::COL_PASSWORD] = $user->getPassword();
-        $data[self::COL_EMAIL] = $user->getEmail();
-        $data[self::COL_FIRSTNAME] = $user->getFirstname();
-        $data[self::COL_LASTNAME] = $user->getLastname();
+        $data[self::COL_LOGIN] = $user->getUserLogin();
+        $data[self::COL_PASSWORD] = $user->getUserPwd();
+        $data[self::COL_ADMIN] = $user->getUserAdmin();
 
         return $data;
     }

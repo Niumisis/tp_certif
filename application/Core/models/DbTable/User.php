@@ -23,10 +23,10 @@
 class Core_Model_DbTable_User extends Zend_Db_Table_Abstract
 {
     /* NOM DE LA TABLE */
-    protected $_name = 'user';
+    protected $_name = 'tp_utilisateurs';
 
     /* NOM DE LA CLE PRIMAIRE */
-    protected $_primary = 'u_id';
+    protected $_primary = 'user_id';
 
     /* DECLARATION DES REFERENCES (FK) */
     protected $_referenceMap = array(

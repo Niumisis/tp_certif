@@ -37,7 +37,7 @@ class Core_Model_Mapper_Privilege extends Core_Model_Mapper_Abstract
         $role = $roleMapper->rowToObject(
             $row->findParentRow('Core_Model_DbTable_Role', 'test_allows_role_FK')
         );
-        
+
         $privileges = new Core_Model_Privilege();
         $privileges->setResourceName($row[self::COL_RESOURCE_NAME]);
         $privileges->setRoleId($role);

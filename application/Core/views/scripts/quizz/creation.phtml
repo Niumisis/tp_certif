@@ -1,0 +1,94 @@
+<h2><?php echo $this->translate('core_user_quizz_title')?></h2>
+
+<?php if ($this->error) :?>
+<div class="alert-message error">
+    <a class="close" href="#">×</a>
+    <p><?php echo $this->translate($this->errorMsg)?></p>
+</div>
+<?php 
+endif;
+
+  $this->form->clearDecorators();
+  
+  $fieldDecorators = array(
+  						   'ViewHelper',
+  							array(
+  						    	array( 'field' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'input'
+  						        )
+  						    ),
+  							array(
+  								'Label',
+  							    array(
+  							    	'class' => 'control-label'
+  							    )
+  							),
+  							'Errors',
+  							array(
+  						    	array( 'row' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'p',
+  						            'class' => 'form-row'
+  						        )
+  						    )
+  						    
+  						);
+  						
+ $fieldErrorDecorators = array(
+  						   'ViewHelper',
+  							array(
+  						    	array( 'field' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'input'
+  						        )
+  						    ),
+  						    'Errors',
+  							array(
+  								'Label',
+  							    array(
+  							    	'class' => 'control-label'
+  							    )
+  							),
+  							array(
+  						    	array( 'row' => 'HtmlTag'),
+  						        array(
+  						        	'tag' => 'div',
+  						            'class' => 'form-row clearfix error'
+  						        )
+  						    )
+  						    
+  						);
+  						
+  $buttonDecorators = array( 
+  	'ViewHelper',
+    array('HtmlTag', array('tag' => 'div', 'class' => 'input')),
+    
+  );
+
+  $this->form->login->setDecorators(
+  						$this->form->login->hasErrors() ? 
+  						$fieldErrorDecorators : $fieldDecorators
+  					)
+  					->setLabel('core_user_form_label_login');
+  
+  $this->form->submit->clearDecorators()
+  					  ->setLabel('core_user_form_label_submit')
+  					  ->setAttrib('class', 'btn primary')
+  					  ->setDecorators($buttonDecorators);
+  					  
+  $this->form->setDecorators(
+  	array(
+  		'FormElements',
+  		'Form'
+  	))
+  	->setAttrib('class', 'well');
+/*
+if (!isset($this->mdp)) {
+	echo $this->form;
+} else {
+	echo '<br/>Votre login est : '.$this->login.'<br/>Votre mot de passe est : '.$this->mdp.'<br/>Merci de le noter en cas de déconnection.';
+}*/
+  echo $this->form;

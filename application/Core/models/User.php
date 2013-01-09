@@ -22,140 +22,122 @@
  * @since 2012-08-06
  * @author Moi <moi@monmail.com>
  */
-class Core_Model_User implements Core_Model_Interface
+class Core_Model_User
 {
+
     /**
-     * @var integer
+     *  @var string
+     *  @desc Variable de type : int
+     *        Longueur : 10 unsigned
      */
-    private $_id;
+
+    private $userId;
+
     /**
-     * @var Core_Model_Role
+     *  @var string
+     *  @desc Variable de type : varchar
+     *        Longueur : 50
      */
-    private $_login;
+
+    private $userLogin;
+
     /**
-     * @var string
+     *  @var string
+     *  @desc Variable de type : varchar
+     *        Longueur : 50
      */
-    private $_password;
+
+    private $userPwd;
+
     /**
-     * @var string
+     *  @var string
+     *  @desc Variable de type : tinyint
+     *        Longueur : 4
      */
-    private $_email;
+
+    private $userAdmin;
     /**
-     * @var string
+     *  @return $userId
      */
-    private $_firstname;
-    /**
-     * @var string
-     */
-    private $_lastname;
-    /**
-     * @return int L'id de l'utilisateur
-     */
-    public function getId()
+
+    public function getUserId()
     {
-        return $this->_id;
+        return $this->userId;
     }
 
     /**
-     * @param int $_id
+     *  @param string $userId
+     *  @desc dÃ©finit la variable : userId de type <b>string</b>
      */
-    public function setId($_id)
+
+    public function setUserId($userId)
     {
-        $this->_id = $_id;
+        $this->userId = $userId;
 
         return $this;
     }
 
     /**
-     * @return string L'identifiant de l'utilisateur
+     *  @return $userLogin
      */
-    public function getLogin()
+
+    public function getUserLogin()
     {
-        return $this->_login;
+        return $this->userLogin;
     }
 
     /**
-     * @param string $_login
+     *  @param string $userLogin
+     *  @desc dÃ©finit la variable : userLogin de type <b>string</b>
      */
-    public function setLogin($_login)
+
+    public function setUserLogin($userLogin)
     {
-        $this->_login = $_login;
+        $this->userLogin = $userLogin;
 
         return $this;
     }
 
     /**
-     * @return string Le mot de passe (hashé SHA1) de l'utilisateur
+     *  @return $userPwd
      */
-    public function getPassword()
-    {
-        return $this->_password;
 
+    public function getUserPwd()
+    {
+        return $this->userPwd;
     }
 
     /**
-     * @param string $_password
+     *  @param string $userPwd
+     *  @desc dÃ©finit la variable : userPwd de type <b>string</b>
      */
-    public function setPassword($_password)
+
+    public function setUserPwd($userPwd)
     {
-        $this->_password = $_password;
+        $this->userPwd = $userPwd;
 
         return $this;
     }
 
     /**
-     * @return string L'email de l'utilisateur
+     *  @return $userAdmin
      */
-    public function getEmail()
+
+    public function getUserAdmin()
     {
-        return $this->_email;
+        return $this->userAdmin;
     }
 
     /**
-     * @param string $_email
+     *  @param string $userAdmin
+     *  @desc dÃ©finit la variable : userAdmin de type <b>string</b>
      */
-    public function setEmail($_email)
+
+    public function setUserAdmin($userAdmin)
     {
-        $this->_email = $_email;
+        $this->userAdmin = $userAdmin;
 
         return $this;
     }
-
-    /**
-     * @return string Le prénom de l'utilisateur
-     */
-    public function getFirstname()
-    {
-        return $this->_firstname;
-    }
-
-    /**
-     * @param string $_firstname
-     */
-    public function setFirstname($_firstname)
-    {
-        $this->_firstname = $_firstname;
-
-        return $this;
-    }
-
-    /**
-     * @return string Le nom de l'utilisateur
-     */
-    public function getLastname()
-    {
-        return $this->_lastname;
-    }
-
-    /**
-     * @param string $_lastname
-     */
-    public function setLastname($_lastname)
-    {
-        $this->_lastname = $_lastname;
-
-        return $this;
-    }
-  
 
 }
