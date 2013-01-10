@@ -90,31 +90,44 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
 	    	foreach($this->getSessionReponse()->questions as $clequestion => $reponse ) {
 	    		$tabQuestionsRempli[] = $clequestion;
 	    	}
-	    	 
-	    	return array_diff($tabQuestions, $tabQuestionsRempli);
+	    	 if ($this->getNbQuestionRepondu() < $this->getNbQuestion()) {
+	    	 	return array_diff($tabQuestions, $tabQuestionsRempli);
+	    	 } else {
+	    	 	return reset($tabQuestions);
+	    	 }
+	    	
     	} else {
     		return $tabQuestions;
     	}
     }
-    	
+    
+    // liste des questionnaire
+    public function liste_questionnaire() {
+    	$listeQuestionnaire = new Core_Model_Mapper_Questionnaire();
+    	return $listeQuestionnaire->fetchAll();
+    }
+    
+    // donne les infos d'un formulaire
+    public function details_questionnaire($id) {
+    	$listeQuestionnaire = new Core_Model_Mapper_Questionnaire();
+    	return $listeQuestionnaire->find($id);
+    }
+    
     // questionnaire aleatoire
     public function rand_form() {
     	// choix du formulaire automatique
-    	
-    //	if (count($searchResult) == 0) {
-    		$questionnaires = new Core_Model_Mapper_Questionnaire();
-    		$idsQuestionnaire = $questionnaires->fetchAll();
-    		foreach($idsQuestionnaire as $id)
-    			$searchResult[] = $id->getQuestionnaireID();
-    //	}
-    	
+    	$idsQuestionnaire = $this->liste_questionnaire();
+    	foreach($idsQuestionnaire as $id)
+    		$searchResult[] = $id->getQuestionnaireID();
+
     	/*
     	//--- trie du tableau par nombre d'appel aux tags
     	$array = array(1, 3,"hello", 1, "world", "hello");
     	$array = array_count_values($array);
     	arsort($array);
     	//print_r($array);
-    	//---*/
+    	//---
+    	*/
     	
     	return array_rand($searchResult, 1);
     }
@@ -188,7 +201,7 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     }
 
     // question suivante
-    public function next($lastid) {
+    private function next($lastid) {
     	if (isset($this->getSessionReponse()->questionnaireId)) {
     		$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
     		if (count($questions) > 1) {
@@ -247,7 +260,7 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
 //     	}
 //     }
 
-    public function prev($lastid) {
+    private function prev($lastid) {
     	if (isset($this->getSessionReponse()->questionnaireId)) {
     		$questions = $this->find_questions($this->getSessionReponse()->questionnaireId);
     		if (count($questions) > 1) {

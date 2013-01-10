@@ -74,18 +74,32 @@ class Core_Form_Question extends Zend_Form
     			$this->addElement($reponse);
     			break;
     	}
-		
+    	
+		$this->addDisplayGroup(array('reponse'), 'reponseQuizz');
+    	
     	$id = new Zend_Form_Element_Hidden('question');
     	$this->addElement($id);
     	
-        $tag = new Zend_Form_Element_Submit('marquer');
-        $this->addElement($tag);
-        
-        $prev = new Zend_Form_Element_Submit('precedent');
+
+    	$prev = new Zend_Form_Element_Submit('precedent');
         $this->addElement($prev);
+        
+ 		$tag = new Zend_Form_Element_Submit('marquer');
+        $this->addElement($tag);
         
         $next = new Zend_Form_Element_Submit('suivant');
         $this->addElement($next);
+        $this->addDisplayGroup(
+        		array(
+        				'precedent',
+        				'marquer',
+        				'suivant'
+        				)
+        		, 'boutonsQuizz');
 
+        $this->setDisplayGroupDecorators( array(
+        		'FormElements',
+        		'Fieldset'
+        ));
     }
 }

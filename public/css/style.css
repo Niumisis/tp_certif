@@ -320,3 +320,42 @@ td { vertical-align: top; }
 	padding : 10px;
 }
 
+#timer {
+	visibility:visible;position:fixed; display:block; top:300px; right:120px; width:100px; height:auto; background-color:#ccc; border-radius:15px; border:1px #999 solid; padding:5px; text-align:center;font-weight:bold;
+}
+
+#horloge {
+	font-weight:bold; border-bottom:1px #999 solid;padding-top:30px;padding-bottom:5px;height:40px;font-size:18px;color:#000;
+}
+
+#finquizz {
+	height:30px;padding-top:5px;
+}
+
+#fieldset-boutonsQuizz {
+	clear:both;
+	width:280px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#fieldset-reponseQuizz {
+	margin:0px;
+	padding:0px;
+	float:left;
+	clear:both;
+
+}
+
+#fieldset-reponseQuizz input {
+	float:left;
+	margin-left:50px;
+	margin-top:5px;
+	margin-right:5px;
+
+}
+
+#fieldset-reponseQuizz label {
+	float:left;
+	text-align: left;
+}

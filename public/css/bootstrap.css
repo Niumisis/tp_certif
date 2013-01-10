@@ -1054,7 +1054,7 @@ label {
 }
 
 form .input {
-	margin-left: 150px;
+	/*margin-left: 150px;*/
 }
 
 input[type=checkbox],input[type=radio] {
@@ -3246,7 +3246,7 @@ html.js body div div.container form dl.zend_form fieldset div.control-group div.
 
 html.js body div div.container form {
 	position: relative;
-	left: 10px;
+	/*left: 10px;*/
 }
 
 html.js body div div.container form dl.zend_form fieldset {

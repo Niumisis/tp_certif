@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    
+
    <div class="breadcrumb">
    <?php echo $this->translate('breadcrumbs_begining')?> :
    <?php 
@@ -81,7 +81,12 @@
    </div>
    
    <?php echo $this->layout()->content ?>
-   
+   <?php if($this->timer == true) {?>
+      <div id="timer">Temps restant
+      	<div id="horloge">MM:SS</div>
+      	<div id="finquizz"><input type="submit" class="btn danger" value="Finir le quizz"/></div>
+      </div>
+      <?php } ?>
    <footer>
         <p>&copy; Company 2011</p>
     </footer>
@@ -97,6 +102,7 @@
   	$this->inlineScript()->prependFile('/js/libs/jquery-1.7.1.min.js');
 
   	echo $this->inlineScript();
+ 
   ?>   
 </body>
 </html>

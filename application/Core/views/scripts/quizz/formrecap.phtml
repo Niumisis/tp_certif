@@ -1,0 +1,26 @@
+<form action="<?php echo $this->escape($this->element->getAction()); ?>" method="<?php echo $this->escape($this->element->getMethod()); ?>" enctype="<?php echo $this->escape($this->element->getEnctype()); ?>" >
+
+	<table id="quizz-list" class="condensed-table zebra-striped" >
+		<thead>
+			<tr>
+				<th></th>
+				<th>Type de questionnaire</th>
+			    <th>Nombre de questions</th>
+			    <th>Temps</th>
+			</tr>
+	  </thead>
+	  <tbody>
+	<?php foreach($this->element->questionnaire->options as $cle => $question) : ?>
+		  <tr>
+		     <td><input type="radio" value="<?php echo $cle ?>" id="questionnaire" name="questionnaire"/></td>
+		     <td><?php echo $question['intitule'] ?></td>
+		     <td><?php echo $question['nombre'] ?></td>
+		     <td><?php echo $question['temps'] ?></td>
+		  </tr>  
+	<?php  endforeach;?>
+	  </tbody>
+	</table>
+ 
+<?php echo $this->element->debut->renderViewHelper(); ?>
+ 
+</form>

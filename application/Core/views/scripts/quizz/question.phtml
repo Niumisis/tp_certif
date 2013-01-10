@@ -21,7 +21,7 @@ if (isset($this->question)) {
 	}
 echo '</div>';	
 
-$this->form->clearDecorators();
+	$this->form->clearDecorators();
   
   $fieldDecorators = array(
   						   'ViewHelper',
@@ -81,25 +81,30 @@ $this->form->clearDecorators();
   );
   
   echo '<h2>R&eacute;ponse</h2>';
+  
   $this->form->reponse->clearDecorators()
 					  ->setAttrib('class', 'reponses')
 					  ->setDecorators($buttonDecorators);
   
   $this->form->question->setValue($this->question->getIdQuestions());
-  
-  $this->form->marquer->clearDecorators()
-  					  ->setLabel('core_quizz_form_label_marquer')
-  					  ->setAttrib('class', 'btn primary')
-  					  ->setDecorators($buttonDecorators);
+
   
   $this->form->precedent->clearDecorators()
 					  ->setLabel('core_quizz_form_label_precedent')
-					  ->setAttrib('class', 'btn primary')
+					  ->setAttrib('class', 'btn ')
+					  ->setAttrib('style', 'float:left')
 					  ->setDecorators($buttonDecorators);
+    
+  $this->form->marquer->clearDecorators()
+  					  ->setLabel('core_quizz_form_label_marquer')
+  					  ->setAttrib('class', 'btn primary')
+  					  ->setAttrib('style', 'float:left')
+  					  ->setDecorators($buttonDecorators);
   
   $this->form->suivant->clearDecorators()
 					  ->setLabel('core_quizz_form_label_suivant')
-					  ->setAttrib('class', 'btn primary')
+					  ->setAttrib('class', 'btn ')
+					  ->setAttrib('style', 'float:left')
 					  ->setDecorators($buttonDecorators);
   					  
   $this->form->setDecorators(

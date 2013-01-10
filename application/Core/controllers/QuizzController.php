@@ -35,16 +35,17 @@
  */
 class QuizzController extends Zend_Controller_Action
 {
-    //private $userService;
+    private $_timer = false;
     
     public function init()
     {
         $this->userService = new Core_Service_User();
+        $this->_timer = false;
     }
     
     // affichage des qestions
 	public function questionAction() {
-		
+		$this->view->timer = $this->_timer = true;
 		$idquestionnaire = 1;
 		// on recupere l'id de la question
 		$qid = (int) $this->getRequest()->getParam('qid');
@@ -66,7 +67,6 @@ class QuizzController extends Zend_Controller_Action
 				$this->view->error = true;
 			}
 		} else {
-			//$questionId = $csq->find_void($idquestionnaire);
 			$questionId = $csq->find_questions($idquestionnaire);
 			$form = new Core_Form_Question(reset($questionId));
 				
@@ -79,8 +79,6 @@ class QuizzController extends Zend_Controller_Action
 		
 		if( $this->getRequest()->isPost()) {
 			if ($form->isValid($this->getRequest()->getPost())) {
-				;
-				
 				//$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion' ));
 				$this->_redirect('/quizz/question/'.$csq->save($this->getRequest()->getPost()));
 			}
@@ -107,7 +105,7 @@ class QuizzController extends Zend_Controller_Action
     	$ss->details_question(1);
     	*/
     	$user = new Core_Model_User();
-
+		$csq = new Core_Service_Quizz();
     	$this->view->mdp = $this->userService->getIdentity()->getUserPwd();
     	$this->view->login = $this->userService->getIdentity()->getUserLogin();
     	
@@ -116,17 +114,23 @@ class QuizzController extends Zend_Controller_Action
     		 ->setMethod('post');
 
     	if( $this->getRequest()->isPost()) {
+    		print_r($form->getValues);
+    		print_r($this->getRequest()->getPost());
     		if ($form->isValid($this->getRequest()->getPost())) {
-    			$csq = new Core_Service_Quizz();
-    			$csq->save_form($id_form);
-    			$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion'));
+    			//print_r($form);
+    			//$csq->save_form($id_form);
+    			//print_r($this->getRequest()->getPost());
+    			//$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion'));
     		}
     	}
     	
     	// supression de la session 
-    	$csq = new Core_Service_Quizz();
-    	$csq->unsetSession();
     	
+    	$csq->unsetSession();
+    	//print_r($csq->rand_form());
+    	//print_r($csq->details_questionnaire(2));
+    	//$csq->liste_questionnaire();
+    	$this->view->listeQuestionnaire = $csq->liste_questionnaire();
     	$this->view->form = $form;
     }
     
