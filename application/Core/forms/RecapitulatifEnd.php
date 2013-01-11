@@ -41,8 +41,10 @@ class Core_Form_RecapitulatifEnd extends Zend_Form
     	$this->addElement($questionsFlags);
 
     	if (count($csq->find_void($csq->getSessionReponse()->questionnaireId)) < $csq->getNbQuestion()) {
-	    	foreach($csq->find_void($csq->getSessionReponse()->questionnaireId) as $id) {
-		    	$voidElement[$id] = $id;
+	    	if (is_array($csq->find_void($csq->getSessionReponse()->questionnaireId))) {
+	    		foreach($csq->find_void($csq->getSessionReponse()->questionnaireId) as $id) {
+		    		$voidElement[$id] = $id;
+	    		}
 	    	}
     	}
     	

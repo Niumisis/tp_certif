@@ -4616,3 +4616,18 @@ Stack Trace:
 [11-Jan-2013 14:54:31 UTC] PHP   7. QuizzController->recapitulatiffinAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
 [11-Jan-2013 14:54:48 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
 [11-Jan-2013 15:01:06 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 15:12:13 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 15:13:03 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 15:15:52 UTC] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 52
+[11-Jan-2013 15:15:52 UTC] PHP Stack trace:
+[11-Jan-2013 15:15:52 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 15:15:52 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 15:15:52 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 15:15:52 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 15:15:52 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 15:15:52 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 15:15:52 UTC] PHP   7. QuizzController->recapitulatiffinAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 15:15:52 UTC] PHP   8. Zend_Loader_Autoloader::autoload() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:0
+[11-Jan-2013 15:15:52 UTC] PHP   9. Zend_Loader_Autoloader_Resource->autoload() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Loader/Autoloader.php:120
+[11-Jan-2013 15:16:16 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 45
+[11-Jan-2013 15:16:40 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 45
