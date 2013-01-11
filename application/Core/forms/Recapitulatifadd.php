@@ -28,28 +28,27 @@ class Core_Form_Recapitulatifadd extends Zend_Form
     {
     	$csq = new Core_Service_Quizz();
     	$options = array();
-    	
-    	$csq->liste_questionnaire();
-    	
+
     	foreach($csq->liste_questionnaire() as $question) {
     		$options[$question->getQuestionnaireId()]['intitule'] = $question->getQuestionnaireIntitule();
 	    	$options[$question->getQuestionnaireId()]['nombre'] = $question->getQuestionnaireNb();
 	    	$options[$question->getQuestionnaireId()]['temps'] = $question->getQuestionnaireTemps();
+	    	$options[$question->getQuestionnaireId()]['id'] = $question->getQuestionnaireId();
+	    	$opt[$question->getQuestionnaireId()] = '';
     	}
-    	
 
- 
     	$questionnaire = new Zend_Form_Element_Radio('questionnaire');
-    	$questionnaire->addMultiOptions($options);
+    	$questionnaire->addMultiOptions($opt);
     	$this->addElement($questionnaire);
-    	
-    	$this->setDecorators(array(
-    			array('ViewScript', array('viewScript' => 'quizz/formrecap.phtml'))
-    	));
     	
         $start = new Zend_Form_Element_Submit('debut');
         $start->setAttrib('class', 'btn')
+        	  ->setName('debut')
 	          ->setLabel('core_quizz_form_label_debut');
         $this->addElement($start);
+        
+        $this->setDecorators(array(
+    			array('ViewScript', array('viewScript' => 'quizz/formrecap.phtml', 'rad' => $options))
+    	));
     }
 }

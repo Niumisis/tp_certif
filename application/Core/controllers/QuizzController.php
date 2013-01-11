@@ -46,10 +46,11 @@ class QuizzController extends Zend_Controller_Action
     // affichage des qestions
 	public function questionAction() {
 		$this->view->timer = $this->_timer = true;
-		$idquestionnaire = 1;
+		
 		// on recupere l'id de la question
 		$qid = (int) $this->getRequest()->getParam('qid');
 		$csq = new Core_Service_Quizz();
+		$idquestionnaire = $csq->getSessionReponse()->questionnaireId;
 		$this->view->nbReponse = $csq->getNbQuestionRepondu();
 		$this->view->nbQuestion = $csq->getNbQuestion();
 		if ($qid > 0) {
@@ -63,18 +64,23 @@ class QuizzController extends Zend_Controller_Action
 				
 				$this->view->form = $form;
 			} else {
-				$this->view->errorMsg = 'question_not_found';
+				$this->view->errorMsg = 'question_not_found_id';
 				$this->view->error = true;
 			}
 		} else {
 			$questionId = $csq->find_questions($idquestionnaire);
-			$form = new Core_Form_Question(reset($questionId));
-				
-			$form->setAction(null)
-				 ->setMethod('post');
-				
-			$this->view->form = $form;
-			$this->view->question = ($csq->details_question(reset($questionId)));
+			if ($questionId !== false) {
+				$form = new Core_Form_Question(reset($questionId));
+					
+				$form->setAction(null)
+					 ->setMethod('post');
+					
+				$this->view->form = $form;
+				$this->view->question = ($csq->details_question(reset($questionId)));
+			} else {
+				$this->view->errorMsg = 'question_not_found';
+				$this->view->error = true;
+			}
 		}
 		
 		if( $this->getRequest()->isPost()) {
@@ -89,7 +95,6 @@ class QuizzController extends Zend_Controller_Action
     // liste des quizz dispo
     public function recapitulatifAction()
     {
-    	$id_form = 1;
     	/*$ss = new Core_Service_Quizz();
     	$ss->save_form($id_form);
     	$ss->save(2,1,'tdj  eponse');
@@ -114,19 +119,17 @@ class QuizzController extends Zend_Controller_Action
     		 ->setMethod('post');
 
     	if( $this->getRequest()->isPost()) {
-    		print_r($form->getValues);
-    		print_r($this->getRequest()->getPost());
     		if ($form->isValid($this->getRequest()->getPost())) {
-    			//print_r($form);
-    			//$csq->save_form($id_form);
-    			//print_r($this->getRequest()->getPost());
-    			//$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion'));
+    			
+    			$csq->save_form($form->getValue('questionnaire'));
+    		//	print_r($this->getRequest()->getPost());
+    			$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion'));
     		}
     	}
-    	
+
     	// supression de la session 
     	
-    	$csq->unsetSession();
+
     	//print_r($csq->rand_form());
     	//print_r($csq->details_questionnaire(2));
     	//$csq->liste_questionnaire();

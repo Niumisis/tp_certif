@@ -10,9 +10,11 @@
 			</tr>
 	  </thead>
 	  <tbody>
-	<?php foreach($this->element->questionnaire->options as $cle => $question) : ?>
+
+	<?php 
+	foreach($this->rad as $cle => $question) : ?>
 		  <tr>
-		     <td><input type="radio" value="<?php echo $cle ?>" id="questionnaire" name="questionnaire"/></td>
+		     <td><input type="radio" value="<?php echo $cle ?>" id="questionnaire-<?php echo $question['id'] ?>" name="questionnaire"/></td>
 		     <td><?php echo $question['intitule'] ?></td>
 		     <td><?php echo $question['nombre'] ?></td>
 		     <td><?php echo $question['temps'] ?></td>

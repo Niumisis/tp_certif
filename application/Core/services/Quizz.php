@@ -50,11 +50,15 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	$tabQuestions = array();
     	$listeQuestions = new Core_Model_Mapper_ListeQuestions();
     	$questions = $listeQuestions->fetchall(array('lst_ques_id_questionnaire=?' => $idQuestionnaire));
-    	while($questions->valid() == true) {
-    		$tabQuestions[] = $questions->current()->getLstQuesIdQues();
-    		$questions->next();
+    	if ($questions != null) {
+	    	while($questions->valid() == true) {
+	    		$tabQuestions[] = $questions->current()->getLstQuesIdQues();
+	    		$questions->next();
+	    	}
+	    	return $tabQuestions;
+    	} else {
+    		return false;
     	}
-    	return $tabQuestions;
     }
     
     // recuperation des infos question
@@ -134,6 +138,7 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	
 	// enregistre les infos du questionnaire en session
 	public function save_form($id_formulaire) {
+		$this->unsetSession();
 		$user = new Core_Service_User();
 		$questionnaire = new Core_Model_Mapper_Questionnaire();
 		$infosQuestionnaire = $questionnaire->find($id_formulaire);

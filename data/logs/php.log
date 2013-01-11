@@ -3011,3 +3011,412 @@ Stack Trace:
 [10-Jan-2013 13:48:24 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
 [10-Jan-2013 13:48:24 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
 [10-Jan-2013 13:58:31 UTC] Notice: Trying to get property of non-object dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 120
+[10-Jan-2013 14:12:10 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 14:12:10 UTC] PHP Stack trace:
+[10-Jan-2013 14:12:10 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 14:12:10 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 14:12:10 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 14:12:10 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 14:12:10 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 14:12:10 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 14:12:10 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 14:12:10 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 14:12:10 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 14:12:10 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 14:12:12 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml on line 13
+[10-Jan-2013 14:12:12 UTC] PHP Stack trace:
+[10-Jan-2013 14:12:12 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 14:12:12 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 14:12:12 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 14:12:12 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 14:12:12 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 14:12:12 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 14:12:12 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[10-Jan-2013 14:12:12 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[10-Jan-2013 14:12:12 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[10-Jan-2013 14:12:12 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[10-Jan-2013 14:12:12 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[10-Jan-2013 14:12:12 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 14:12:12 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 14:12:12 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:86
+[10-Jan-2013 14:12:12 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[10-Jan-2013 14:12:12 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[10-Jan-2013 14:12:12 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 14:12:12 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 14:12:12 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 14:12:12 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 14:12:12 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[10-Jan-2013 14:12:12 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 14:12:12 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 14:12:19 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:19 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:19 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:12:22 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:22 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:22 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:12:24 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:24 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:24 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:12:40 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:40 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:40 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:12:41 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:41 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 14:12:41 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:18:24 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 14:18:24 UTC] PHP Stack trace:
+[10-Jan-2013 14:18:24 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 14:18:24 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 14:18:24 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 14:18:24 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 14:18:24 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 14:18:24 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 14:18:24 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 14:18:24 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 14:18:24 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 14:18:24 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 14:22:00 UTC] Notice: Trying to get property of non-object dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:22:00 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 13
+[10-Jan-2013 14:24:52 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml on line 24
+[10-Jan-2013 14:24:52 UTC] PHP Stack trace:
+[10-Jan-2013 14:24:52 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 14:24:52 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 14:24:52 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 14:24:52 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 14:24:52 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 14:24:52 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 14:24:52 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[10-Jan-2013 14:24:52 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[10-Jan-2013 14:24:52 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[10-Jan-2013 14:24:52 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[10-Jan-2013 14:24:52 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[10-Jan-2013 14:24:52 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 14:24:52 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 14:24:52 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:88
+[10-Jan-2013 14:24:52 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[10-Jan-2013 14:24:52 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[10-Jan-2013 14:24:52 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 14:24:52 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 14:24:52 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 14:24:52 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 14:24:52 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[10-Jan-2013 14:24:52 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 14:24:52 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 14:53:18 UTC] Warning: Missing argument 1 for Zend_Form::getValue(), called in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 122 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1319
+[10-Jan-2013 14:53:18 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1321
+[10-Jan-2013 14:53:18 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1325
+[10-Jan-2013 14:53:19 UTC] Warning: Missing argument 1 for Zend_Form::getValue(), called in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 122 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1319
+[10-Jan-2013 14:53:19 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1321
+[10-Jan-2013 14:53:19 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1325
+[10-Jan-2013 14:53:28 UTC] Warning: Missing argument 1 for Zend_Form::getValue(), called in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 122 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1319
+[10-Jan-2013 14:53:28 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1321
+[10-Jan-2013 14:53:28 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1325
+[10-Jan-2013 14:53:31 UTC] Warning: Missing argument 1 for Zend_Form::getValue(), called in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 122 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1319
+[10-Jan-2013 14:53:31 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1321
+[10-Jan-2013 14:53:31 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1325
+[10-Jan-2013 14:53:33 UTC] Warning: Missing argument 1 for Zend_Form::getValue(), called in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 122 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1319
+[10-Jan-2013 14:53:33 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1321
+[10-Jan-2013 14:53:33 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 1325
+[10-Jan-2013 15:04:37 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml on line 25
+[10-Jan-2013 15:04:37 UTC] PHP Stack trace:
+[10-Jan-2013 15:04:37 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 15:04:37 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 15:04:37 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 15:04:37 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 15:04:37 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 15:04:37 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 15:04:37 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[10-Jan-2013 15:04:37 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[10-Jan-2013 15:04:37 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[10-Jan-2013 15:04:37 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[10-Jan-2013 15:04:37 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[10-Jan-2013 15:04:37 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 15:04:37 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 15:04:37 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:88
+[10-Jan-2013 15:04:37 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[10-Jan-2013 15:04:37 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[10-Jan-2013 15:04:37 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 15:04:37 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[10-Jan-2013 15:04:37 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 15:04:37 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[10-Jan-2013 15:04:37 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[10-Jan-2013 15:04:37 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[10-Jan-2013 15:04:37 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[10-Jan-2013 15:24:00 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:00 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:12 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:12 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:17 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:17 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:21 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:24:21 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:26:13 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 16
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:10 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 17
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: intitule dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 18
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: nombre dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 19
+[10-Jan-2013 15:27:53 UTC] Notice: Undefined index: temps dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 20
+[10-Jan-2013 15:33:28 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:33:28 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:33:54 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:33:54 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:33:57 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:33:57 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:29 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:29 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:29 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:34 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:34 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:34 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:36 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:36 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:42:36 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:08 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:08 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:08 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:10 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:10 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:43:10 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:47:58 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:47:58 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:47:58 UTC] Warning: htmlspecialchars() expects parameter 1 to be string, array given dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php à la ligne 905
+[10-Jan-2013 15:50:54 UTC] Warning: Missing argument 1 for Zend_Form_Element::removeValidator(), called in /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php on line 46 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1288
+[10-Jan-2013 15:50:54 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1290
+[10-Jan-2013 15:50:54 UTC] Notice: Undefined variable: name dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1293
+[10-Jan-2013 15:58:44 UTC] Notice: Undefined variable: opt dans /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php à la ligne 39
+[10-Jan-2013 15:58:44 UTC] Notice: Undefined variable: opt dans /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php à la ligne 39
+[10-Jan-2013 15:58:44 UTC] Notice: Undefined variable: opt dans /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php à la ligne 39
+[10-Jan-2013 15:58:44 UTC] Notice: Undefined variable: opt dans /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php à la ligne 43
+[10-Jan-2013 15:58:44 UTC] Notice: Undefined variable: opt dans /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php à la ligne 45
+[10-Jan-2013 15:58:44 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element_Multi::addMultiOptions() must be an array, null given, called in /home/www/tp_certif/application/Core/forms/Recapitulatifadd.php on line 45 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element/Multi.php à la ligne 121
+[10-Jan-2013 15:58:44 UTC] Warning: Invalid argument supplied for foreach() dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element/Multi.php à la ligne 123
+[10-Jan-2013 16:04:18 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 16:04:18 UTC] PHP Stack trace:
+[10-Jan-2013 16:04:18 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 16:04:18 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 16:04:18 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 16:04:18 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 16:04:18 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 16:04:18 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 16:04:18 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 16:04:18 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 16:04:18 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 16:04:18 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 16:04:34 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 16:04:34 UTC] PHP Stack trace:
+[10-Jan-2013 16:04:34 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 16:04:34 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 16:04:34 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 16:04:34 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 16:04:34 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 16:04:34 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 16:04:34 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 16:04:34 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 16:04:34 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 16:04:34 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 16:04:44 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 16:04:44 UTC] PHP Stack trace:
+[10-Jan-2013 16:04:44 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 16:04:44 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 16:04:44 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 16:04:44 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 16:04:44 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 16:04:44 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 16:04:44 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 16:04:44 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 16:04:44 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 16:04:44 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 16:05:35 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 16:05:35 UTC] PHP Stack trace:
+[10-Jan-2013 16:05:35 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 16:05:35 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 16:05:35 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 16:05:35 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 16:05:35 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 16:05:35 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 16:05:35 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 16:05:35 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 16:05:35 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 16:05:35 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[10-Jan-2013 16:05:46 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[10-Jan-2013 16:05:46 UTC] PHP Stack trace:
+[10-Jan-2013 16:05:46 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[10-Jan-2013 16:05:46 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[10-Jan-2013 16:05:46 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[10-Jan-2013 16:05:46 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[10-Jan-2013 16:05:46 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[10-Jan-2013 16:05:46 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[10-Jan-2013 16:05:46 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[10-Jan-2013 16:05:46 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[10-Jan-2013 16:05:46 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[10-Jan-2013 16:05:46 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[11-Jan-2013 08:03:18 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[11-Jan-2013 08:03:18 UTC] PHP Stack trace:
+[11-Jan-2013 08:03:18 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:03:18 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:03:18 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:03:18 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:03:18 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:03:18 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:03:18 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:03:18 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:71
+[11-Jan-2013 08:03:18 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[11-Jan-2013 08:03:18 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[11-Jan-2013 08:04:19 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[11-Jan-2013 08:04:19 UTC] PHP Stack trace:
+[11-Jan-2013 08:04:19 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:04:19 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:04:19 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:04:19 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:04:19 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:04:19 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:04:19 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:04:19 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:72
+[11-Jan-2013 08:04:19 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[11-Jan-2013 08:04:19 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[11-Jan-2013 08:05:54 UTC] Warning: reset() expects parameter 1 to be array, null given dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 70
+[11-Jan-2013 08:06:38 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[11-Jan-2013 08:06:38 UTC] PHP Stack trace:
+[11-Jan-2013 08:06:38 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:06:38 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:06:38 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:06:38 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:06:38 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:06:38 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:06:38 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:06:38 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:74
+[11-Jan-2013 08:06:38 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[11-Jan-2013 08:06:38 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[11-Jan-2013 08:07:07 UTC] PHP Fatal error:  Call to a member function getPropositionQuestions1() on a non-object in /home/www/tp_certif/application/Core/forms/Question.php on line 40
+[11-Jan-2013 08:07:07 UTC] PHP Stack trace:
+[11-Jan-2013 08:07:07 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:07:07 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:07:07 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:07:07 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:07:07 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:07:07 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:07:07 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:07:07 UTC] PHP   8. Core_Form_Question->__construct() /home/www/tp_certif/application/Core/controllers/QuizzController.php:74
+[11-Jan-2013 08:07:07 UTC] PHP   9. Zend_Form->__construct() /home/www/tp_certif/application/Core/forms/Question.php:31
+[11-Jan-2013 08:07:07 UTC] PHP  10. Core_Form_Question->init() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:240
+[11-Jan-2013 08:11:16 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 53
+[11-Jan-2013 08:11:16 UTC] PHP Stack trace:
+[11-Jan-2013 08:11:16 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:11:16 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:11:16 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:11:16 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:11:16 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:11:16 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:11:16 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:11:16 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:12:35 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 53
+[11-Jan-2013 08:12:35 UTC] PHP Stack trace:
+[11-Jan-2013 08:12:35 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:12:35 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:12:35 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:12:35 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:12:35 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:12:35 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:12:35 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:12:35 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:12:36 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 53
+[11-Jan-2013 08:12:36 UTC] PHP Stack trace:
+[11-Jan-2013 08:12:36 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:12:36 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:12:36 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:12:36 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:12:36 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:12:36 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:12:36 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:12:36 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:12:59 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 54
+[11-Jan-2013 08:12:59 UTC] PHP Stack trace:
+[11-Jan-2013 08:12:59 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:12:59 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:12:59 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:12:59 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:12:59 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:12:59 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:12:59 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:12:59 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:13:00 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 54
+[11-Jan-2013 08:13:00 UTC] PHP Stack trace:
+[11-Jan-2013 08:13:00 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:13:00 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:13:00 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:13:00 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:13:00 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:13:00 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:13:00 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:13:00 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:13:40 UTC] PHP Fatal error:  Call to a member function valid() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 55
+[11-Jan-2013 08:13:40 UTC] PHP Stack trace:
+[11-Jan-2013 08:13:40 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:13:40 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:13:40 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:13:40 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:13:40 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:13:40 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:13:40 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:13:40 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
+[11-Jan-2013 08:13:49 UTC] Warning: reset() expects parameter 1 to be array, boolean given dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 75

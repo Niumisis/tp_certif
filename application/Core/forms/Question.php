@@ -33,7 +33,6 @@ class Core_Form_Question extends Zend_Form
 	
     public function init()
     {
-
     	$csq = new Core_Service_Quizz();
     	$option = array();
 
