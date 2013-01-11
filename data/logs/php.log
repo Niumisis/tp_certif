@@ -4479,3 +4479,140 @@ Stack Trace:
 [11-Jan-2013 11:21:13 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 165
 [11-Jan-2013 11:21:13 UTC] Notice: Undefined variable: tabQuestionsRempli dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 169
 [11-Jan-2013 11:21:55 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 166
+[11-Jan-2013 13:17:33 UTC] PHP Fatal error:  Can't use method return value in write context in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 61
+[11-Jan-2013 13:17:33 UTC] PHP Stack trace:
+[11-Jan-2013 13:17:33 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 13:17:33 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 13:17:33 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 13:17:33 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 13:17:33 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 13:17:33 UTC] PHP   6. Zend_Controller_Dispatcher_Standard->loadClass() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:262
+[11-Jan-2013 13:32:32 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:32:38 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:32:46 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:33:24 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:35:37 UTC] PHP Fatal error:  Can't use method return value in write context in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 57
+[11-Jan-2013 13:35:37 UTC] PHP Stack trace:
+[11-Jan-2013 13:35:37 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 13:35:37 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 13:35:37 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 13:35:37 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 13:35:37 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 13:35:37 UTC] PHP   6. Zend_Controller_Dispatcher_Standard->loadClass() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:262
+[11-Jan-2013 13:36:23 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:39:18 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:39:18 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:39:19 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:39:19 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:39:20 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:39:20 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:39:22 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:39:22 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:39:43 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:39:43 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:39:43 UTC] Notice: Undefined variable: form dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:39:43 UTC] PHP Fatal error:  Call to a member function setAction() on a non-object in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 63
+[11-Jan-2013 13:39:43 UTC] PHP Stack trace:
+[11-Jan-2013 13:39:43 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 13:39:43 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 13:39:43 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 13:39:43 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 13:39:43 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 13:39:43 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 13:39:43 UTC] PHP   7. QuizzController->recapitulatiffinAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 13:40:05 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:40:05 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:40:05 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:40:37 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:40:37 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:40:37 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:40:39 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:40:39 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:40:39 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:40:41 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:40:45 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:40:45 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:40:45 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:40:53 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:41:03 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:41:03 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:41:03 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:41:46 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:41:49 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:41:58 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:42:03 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:42:05 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:42:42 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:42:45 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:42:52 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:43:10 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:11 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:12 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:12 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:12 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:12 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:43:14 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:07 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:17 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:30 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:30 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:32 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:41 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:44 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:44 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:44 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:44:45 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:45 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:45 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:44:47 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:47 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:47 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:44:48 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:48 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:48 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:44:49 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:49 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:49 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:44:53 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:44:53 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:44:53 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 64
+[11-Jan-2013 13:45:01 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:45:01 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:45:01 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:45:04 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:45:07 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:45:07 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:45:07 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:45:56 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:46:01 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:01 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 61
+[11-Jan-2013 13:46:01 UTC] Notice: Undefined variable: result dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 63
+[11-Jan-2013 13:46:18 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:22 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 13:46:41 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:42 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:42 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:43 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:46:44 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:32 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:41 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:42 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:42 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:43 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 13:47:46 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 44
+[11-Jan-2013 14:11:18 UTC] Notice: Undefined variable: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 14
+[11-Jan-2013 14:11:18 UTC] Notice: Undefined variable: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 14
+[11-Jan-2013 14:30:21 UTC] Notice: Undefined variable: id dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 14
+[11-Jan-2013 14:54:11 UTC] Unknown, 4096: Object of class Zend_View_Helper_Translate could not be converted to string dans /home/www/tp_certif/application/Core/views/scripts/quizz/creation.phtml à la ligne 6
+[11-Jan-2013 14:54:31 UTC] Notice: Undefined variable: csq dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 56
+[11-Jan-2013 14:54:31 UTC] PHP Fatal error:  Call to a member function save() on a non-object in /home/www/tp_certif/application/Core/controllers/QuizzController.php on line 56
+[11-Jan-2013 14:54:31 UTC] PHP Stack trace:
+[11-Jan-2013 14:54:31 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 14:54:31 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 14:54:31 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 14:54:31 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 14:54:31 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 14:54:31 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 14:54:31 UTC] PHP   7. QuizzController->recapitulatiffinAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 14:54:48 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180
+[11-Jan-2013 15:01:06 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 180

@@ -81,12 +81,7 @@
    </div>
    
    <?php echo $this->layout()->content ?>
-   <?php /*if($this->timer == true) {?>
-      <div id="timer">Temps restant
-      	<div id="horloge">MM:SS</div>
-      	<div id="finquizz"><?php echo $this->timerFin;//<input type="submit" class="btn danger" value="Finir le quizz"/>?></div>
-      </div>
-      <?php }*/ echo $this->timerFin ?>
+   <?php echo $this->timerFin ?>
    <footer>
         <p>&copy; Company 2011</p>
     </footer>
@@ -95,6 +90,7 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
 <?php 
+	$this->inlineScript()->prependFile('/js/script.js');
 	$this->inlineScript()->prependFile('/js/jquery.counter.min.js');
 	$this->inlineScript()->prependFile('/js/jquery.autosize.min.js');
 	$this->inlineScript()->prependFile('/js/bootstrap-dropdown.js');

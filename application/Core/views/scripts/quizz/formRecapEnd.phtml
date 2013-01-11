@@ -9,9 +9,11 @@ $correction = true;
 	  <tbody>
 
 	<?php 
+	
 	foreach($this->element->questionsFlags->options as $flag) { ?>
-		  <tr>
-		     <td><input type="radio" value="<?php echo $flag ?>" id="flags-<?php echo $flag ?>" name="flags"/></td>
+		  <tr onclick="document.location.href='/quizz/question/<?php echo $flag ?>'">
+		     <td><input type="radio" value="<?php echo $flag ?>" id="questionsFlags-<?php echo $flag ?>" 
+		     name="questionsFlags" onclick="uncheck('questionsVoid')"/></td>
 		     <td>Question n°<?php echo $flag ?></td>
 		  </tr>  
 	<?php  }?>
@@ -21,15 +23,16 @@ $correction = true;
 	if (null != $this->element->questionsVoid->options) {
 	$correction = true;
 	?>
-
+<br/>
 <h2>Liste des questions non répondu</h2>
  	<table id="quizz-list" class="condensed-table zebra-striped" >
 	  <tbody>
 
 	<?php 
-	foreach($this->element->questionsVoid->options as $id) { ?>
-		  <tr>
-		     <td><input type="radio" value="<?php echo $id ?>" id="void-<?php echo $id ?>" name="void"/></td>
+	foreach($this->element->questionsVoid->options as  $id) { ?>
+		  <tr onclick="document.location.href='/quizz/question/<?php echo $id ?>'">
+		     <td><input type="radio" value="<?php echo $id ?>" id="questionsVoid-<?php echo $id ?>" 
+		     name="questionsVoid" onclick="uncheck('questionsFlags')"/></td>
 		     <td>Question n°<?php echo $id ?></td>
 		  </tr>  
 	<?php  }?>
@@ -37,8 +40,8 @@ $correction = true;
 	</table>
 <?php 
 }
+//if ($correction) echo $this->element->correction->renderViewHelper(); 
 echo $this->element->valider->renderViewHelper(); 
-if ($correction) echo $this->element->correction->renderViewHelper(); 
 
 ?>
  

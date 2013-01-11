@@ -46,10 +46,19 @@ class QuizzController extends Zend_Controller_Action
     // affiche le recapitulatif des questions
     public function recapitulatiffinAction() {
     	$form = new Core_Form_RecapitulatifEnd;
-    	$form->setAction('null')
-    	->setMethod('post')
-    	->setName('fin');
+    	$form->setAction(null)
+	    	 ->setMethod('post')->setName('rr');
     	$this->view->form = $form;
+    	
+    
+    	if( $this->getRequest()->isPost()) {
+    		if ($form->isValid($this->getRequest()->getPost())) {
+    			
+    			// $csq->save($this->getRequest()->getPost());
+				//print_r($form->getValue('questionsFlags'));
+				//print_r($result);
+    		}
+    	}
     }
     
     // affichage des qestions
