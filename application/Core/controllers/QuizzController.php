@@ -43,9 +43,23 @@ class QuizzController extends Zend_Controller_Action
         $this->_timer = false;
     }
     
+    // affiche le recapitulatif des questions
+    public function recapitulatiffinAction() {
+    	$form = new Core_Form_RecapitulatifEnd;
+    	$form->setAction('null')
+    	->setMethod('post')
+    	->setName('fin');
+    	$this->view->form = $form;
+    }
+    
     // affichage des qestions
 	public function questionAction() {
-		$this->view->timer = $this->_timer = true;
+		//$this->view->timer = $this->_timer = true;
+		$timerFin = new Core_Form_FinQuizz;
+		$timerFin->setAction('/quizz/recapitulatiffin')
+			  	 ->setMethod('post')
+				 ->setName('fin');
+		$this->view->timerFin = $timerFin;
 		
 		// on recupere l'id de la question
 		$qid = (int) $this->getRequest()->getParam('qid');
@@ -120,19 +134,13 @@ class QuizzController extends Zend_Controller_Action
 
     	if( $this->getRequest()->isPost()) {
     		if ($form->isValid($this->getRequest()->getPost())) {
-    			
     			$csq->save_form($form->getValue('questionnaire'));
-    		//	print_r($this->getRequest()->getPost());
     			$this->_redirect($this->view->url(array(), 'CoreQuizzQuestion'));
     		}
     	}
 
-    	// supression de la session 
-    	
-
     	//print_r($csq->rand_form());
     	//print_r($csq->details_questionnaire(2));
-    	//$csq->liste_questionnaire();
     	$this->view->listeQuestionnaire = $csq->liste_questionnaire();
     	$this->view->form = $form;
     }

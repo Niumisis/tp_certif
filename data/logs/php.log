@@ -3420,3 +3420,1062 @@ Stack Trace:
 [11-Jan-2013 08:13:40 UTC] PHP   7. QuizzController->questionAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
 [11-Jan-2013 08:13:40 UTC] PHP   8. Core_Service_Quizz->find_questions() /home/www/tp_certif/application/Core/controllers/QuizzController.php:73
 [11-Jan-2013 08:13:49 UTC] Warning: reset() expects parameter 1 to be array, boolean given dans /home/www/tp_certif/application/Core/controllers/QuizzController.php à la ligne 75
+[11-Jan-2013 08:47:12 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 5
+[11-Jan-2013 08:47:12 UTC] PHP Stack trace:
+[11-Jan-2013 08:47:12 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:47:12 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:47:12 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:47:12 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:47:12 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 08:47:12 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 08:47:12 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 08:47:12 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 08:47:12 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:47:12 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:47:12 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:87
+[11-Jan-2013 08:47:12 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 08:47:12 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 08:47:12 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:47:12 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:47:12 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:47:12 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:47:12 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 08:47:12 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:47:12 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:49:09 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 5
+[11-Jan-2013 08:49:09 UTC] PHP Stack trace:
+[11-Jan-2013 08:49:09 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:49:09 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:49:09 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:49:09 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:49:09 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 08:49:09 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 08:49:09 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 08:49:09 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 08:49:09 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:49:09 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:49:09 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 08:49:09 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 08:49:09 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 08:49:09 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:49:09 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:49:09 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:49:09 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:49:09 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 08:49:09 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:49:09 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:51:11 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 5
+[11-Jan-2013 08:51:11 UTC] PHP Stack trace:
+[11-Jan-2013 08:51:11 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:51:11 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:51:11 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:51:11 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:51:11 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 08:51:11 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 08:51:11 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 08:51:11 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 08:51:11 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:51:11 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:51:11 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 08:51:11 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 08:51:11 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 08:51:11 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:51:11 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:51:11 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:51:11 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:51:11 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 08:51:11 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:51:11 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:52:42 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 5
+[11-Jan-2013 08:52:42 UTC] PHP Stack trace:
+[11-Jan-2013 08:52:42 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:52:42 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:52:42 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:52:42 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:52:42 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 08:52:42 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 08:52:42 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 08:52:42 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 08:52:42 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:52:42 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:52:42 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 08:52:42 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 08:52:42 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 08:52:42 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:52:42 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 08:52:42 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:52:42 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 08:52:42 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 08:52:42 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 08:52:42 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 08:57:09 UTC] PHP Fatal error:  Call to a member function getQuestionnaireNb() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 148
+[11-Jan-2013 08:57:09 UTC] PHP Stack trace:
+[11-Jan-2013 08:57:09 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 08:57:09 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 08:57:09 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 08:57:09 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 08:57:09 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 08:57:09 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 08:57:09 UTC] PHP   7. QuizzController->recapitulatifAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 08:57:09 UTC] PHP   8. Core_Service_Quizz->save_form() /home/www/tp_certif/application/Core/controllers/QuizzController.php:128
+[11-Jan-2013 09:00:00 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:02 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:03 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:03 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:04 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:04 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:05 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:05 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:05 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:05 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:06 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:07 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:08 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:09 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:23 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:24 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:50 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:51 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:55 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:56 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:57 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:58 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:00:59 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:00 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:01 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:01 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:02 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:58 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:58 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:01:59 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:02:00 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:02:24 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:02:24 UTC] PHP Stack trace:
+[11-Jan-2013 09:02:24 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:02:24 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:02:24 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:02:24 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:02:24 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:02:24 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:02:24 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:02:24 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:02:24 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:02:24 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:02:24 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:02:24 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:02:24 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:02:24 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:02:24 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:02:24 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:02:24 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:02:24 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:02:24 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:02:24 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:02:38 UTC] Warning: Exception caught by form: Decorator by name ViewHelper does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml(6): Zend_Form->__call('renderViewHelpe...', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml(6): Core_Form_FinQuizz->renderViewHelper()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formfinqu...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formfinqu...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formfinqu...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/layouts/layout.phtml(89): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php(143): Zend_Layout->render()
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php(333): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#20 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#21 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:03:39 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:03:40 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:03:40 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:05:10 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:05:11 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:05:12 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:05:12 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:06:38 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:06:38 UTC] PHP Stack trace:
+[11-Jan-2013 09:06:38 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:06:38 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:06:38 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:06:38 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:06:38 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:06:38 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:06:38 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:06:38 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:06:38 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:06:38 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:06:38 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:06:38 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:06:38 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:06:38 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:06:38 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:06:38 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:06:38 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:06:38 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:06:38 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:06:38 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:13 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:07:13 UTC] PHP Stack trace:
+[11-Jan-2013 09:07:13 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:07:13 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:07:13 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:07:13 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:07:13 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:07:13 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:07:13 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:07:13 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:07:13 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:13 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:13 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:07:13 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:07:13 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:07:13 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:13 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:13 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:13 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:13 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:07:13 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:13 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:18 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:07:18 UTC] PHP Stack trace:
+[11-Jan-2013 09:07:18 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:07:18 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:07:18 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:07:18 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:07:18 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:07:18 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:07:18 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:07:18 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:07:18 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:18 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:18 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:07:18 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:07:18 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:07:18 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:18 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:18 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:18 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:18 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:07:18 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:18 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:51 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:07:51 UTC] PHP Stack trace:
+[11-Jan-2013 09:07:51 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:07:51 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:07:51 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:07:51 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:07:51 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:07:51 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:07:51 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:07:51 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:07:51 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:51 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:51 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:07:51 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:07:51 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:07:51 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:51 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:51 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:51 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:51 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:07:51 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:51 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:52 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formfinquizz.phtml on line 6
+[11-Jan-2013 09:07:52 UTC] PHP Stack trace:
+[11-Jan-2013 09:07:52 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:07:52 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:07:52 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:07:52 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:07:52 UTC] PHP   5. Zend_Controller_Plugin_Broker->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:965
+[11-Jan-2013 09:07:52 UTC] PHP   6. Zend_Layout_Controller_Plugin_Layout->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Plugin/Broker.php:333
+[11-Jan-2013 09:07:52 UTC] PHP   7. Zend_Layout->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout/Controller/Plugin/Layout.php:143
+[11-Jan-2013 09:07:52 UTC] PHP   8. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Layout.php:796
+[11-Jan-2013 09:07:52 UTC] PHP   9. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:52 UTC] PHP  10. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:07:52 UTC] PHP  11. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:89
+[11-Jan-2013 09:07:52 UTC] PHP  12. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:07:52 UTC] PHP  13. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:07:52 UTC] PHP  14. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:52 UTC] PHP  15. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:07:52 UTC] PHP  16. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:52 UTC] PHP  17. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:07:52 UTC] PHP  18. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:07:52 UTC] PHP  19. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:07:52 UTC] PHP  20. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:09:29 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:09:30 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:09:31 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:09:32 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:10:05 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:10:09 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:10:11 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:10:14 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 09:10:44 UTC] PHP Fatal error:  Call to a member function getQuestionnaireNb() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 148
+[11-Jan-2013 09:10:44 UTC] PHP Stack trace:
+[11-Jan-2013 09:10:44 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:10:44 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:10:44 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:10:44 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:10:44 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:10:44 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:10:44 UTC] PHP   7. QuizzController->recapitulatifAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 09:10:44 UTC] PHP   8. Core_Service_Quizz->save_form() /home/www/tp_certif/application/Core/controllers/QuizzController.php:131
+[11-Jan-2013 09:24:56 UTC] PHP Fatal error:  Call to a member function getQuestionnaireNb() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 148
+[11-Jan-2013 09:24:56 UTC] PHP Stack trace:
+[11-Jan-2013 09:24:56 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:24:56 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:24:56 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:24:56 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:24:56 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:24:56 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:24:56 UTC] PHP   7. QuizzController->recapitulatifAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 09:24:56 UTC] PHP   8. Core_Service_Quizz->save_form() /home/www/tp_certif/application/Core/controllers/QuizzController.php:138
+[11-Jan-2013 09:26:46 UTC] PHP Fatal error:  Call to a member function getQuestionnaireNb() on a non-object in /home/www/tp_certif/application/Core/services/Quizz.php on line 148
+[11-Jan-2013 09:26:46 UTC] PHP Stack trace:
+[11-Jan-2013 09:26:46 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:26:46 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:26:46 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:26:46 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:26:46 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:26:46 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:26:46 UTC] PHP   7. QuizzController->recapitulatifAction() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:516
+[11-Jan-2013 09:26:46 UTC] PHP   8. Core_Service_Quizz->save_form() /home/www/tp_certif/application/Core/controllers/QuizzController.php:138
+[11-Jan-2013 09:28:00 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 38
+[11-Jan-2013 09:28:00 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 87
+[11-Jan-2013 09:28:00 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 89
+[11-Jan-2013 09:28:14 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 38
+[11-Jan-2013 09:28:14 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 87
+[11-Jan-2013 09:28:14 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 89
+[11-Jan-2013 09:28:42 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 38
+[11-Jan-2013 09:28:42 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 87
+[11-Jan-2013 09:28:42 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 89
+[11-Jan-2013 09:29:14 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 87
+[11-Jan-2013 09:29:14 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 89
+[11-Jan-2013 09:29:58 UTC] Notice: Undefined variable: options dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 63
+[11-Jan-2013 09:31:53 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 15
+[11-Jan-2013 09:31:53 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml on line 26
+[11-Jan-2013 09:31:53 UTC] PHP Stack trace:
+[11-Jan-2013 09:31:53 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:31:53 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:31:53 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:31:53 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:31:53 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:31:53 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:31:53 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:31:53 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:31:53 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:31:53 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:31:53 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:31:53 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:31:53 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:31:53 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:31:53 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:31:53 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:31:53 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:31:53 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:31:53 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:31:53 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:31:53 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:31:53 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:31:53 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:32:05 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml à la ligne 15
+[11-Jan-2013 09:32:05 UTC] PHP Fatal error:  Call to a member function renderViewHelper() on a non-object in /home/www/tp_certif/application/Core/views/scripts/quizz/formrecap.phtml on line 26
+[11-Jan-2013 09:32:05 UTC] PHP Stack trace:
+[11-Jan-2013 09:32:05 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:32:05 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:32:05 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:32:05 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:32:05 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:32:05 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:32:05 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:32:05 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:32:05 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:32:05 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:32:05 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:32:05 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:32:05 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:32:05 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:32:05 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:32:05 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:32:05 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:32:05 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:32:05 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:32:05 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:32:05 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:32:05 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:32:05 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:40:43 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 172
+[11-Jan-2013 09:43:37 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 172
+[11-Jan-2013 09:44:54 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 172
+[11-Jan-2013 09:48:01 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:48:37 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:48:49 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:49:03 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:50:30 UTC] Warning: Exception caught by form: Method formRadioArray does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(31): Zend_Form_Element->__call('formRadioArray', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(31): Zend_Form_Element_Radio->formRadioArray()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:50:35 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:50:43 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:51:49 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:51:54 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 31
+[11-Jan-2013 09:52:25 UTC] PHP Fatal error:  Cannot use object of type Zend_Form_Element_Radio as array in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 32
+[11-Jan-2013 09:52:25 UTC] PHP Stack trace:
+[11-Jan-2013 09:52:25 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:52:25 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:52:25 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:52:25 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:52:25 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:52:25 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:52:25 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:52:25 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:52:25 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:52:25 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:52:25 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:52:25 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:52:25 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:52:25 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:52:25 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:52:25 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:52:25 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:52:25 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:52:25 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:52:25 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:52:25 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:52:25 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:52:25 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:53:21 UTC] PHP Fatal error:  Cannot use object of type Zend_Form_Element_Radio as array in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 32
+[11-Jan-2013 09:53:21 UTC] PHP Stack trace:
+[11-Jan-2013 09:53:21 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:53:21 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:53:21 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:53:21 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:53:21 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:53:21 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:53:21 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:53:21 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:53:21 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:53:21 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:53:21 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:53:21 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:53:21 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:53:21 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:53:21 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:53:21 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:53:21 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:53:21 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:53:21 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:53:21 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:53:21 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:53:21 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:53:21 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:53:29 UTC] PHP Fatal error:  Cannot use object of type Zend_Form_Element_Radio as array in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 32
+[11-Jan-2013 09:53:29 UTC] PHP Stack trace:
+[11-Jan-2013 09:53:29 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:53:29 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:53:29 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:53:29 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:53:29 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:53:29 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:53:29 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:53:29 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:53:29 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:53:29 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:53:29 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:53:29 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:53:29 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:53:29 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:53:29 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:53:29 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:53:29 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:53:29 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:53:29 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:53:29 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:53:29 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:53:29 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:53:29 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:56:42 UTC] Warning: Exception caught by form: Decorator by name Name does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element->__call('renderName', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element_Radio->renderName()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:56:54 UTC] Warning: Exception caught by form: Decorator by name Type does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element->__call('renderType', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element_Radio->renderType()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:57:02 UTC] Warning: Exception caught by form: Decorator by name Options does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element->__call('renderOptions', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element_Radio->renderOptions()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:57:07 UTC] Warning: Exception caught by form: Decorator by name Option does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element->__call('renderOption', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(28): Zend_Form_Element_Radio->renderOption()
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 09:58:28 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 28 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 09:58:28 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 09:58:28 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 09:58:28 UTC] PHP Stack trace:
+[11-Jan-2013 09:58:28 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:58:28 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:58:28 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:58:28 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:58:28 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:58:28 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:58:28 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:58:28 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:58:28 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:58:28 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:58:28 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:58:28 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:28 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:28 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:58:28 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:58:28 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:58:28 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:28 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:28 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:28 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:28 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:58:28 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:28 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:28 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 09:58:28 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 09:58:32 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 28 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 09:58:32 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 09:58:32 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 09:58:32 UTC] PHP Stack trace:
+[11-Jan-2013 09:58:32 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:58:32 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:58:32 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:58:32 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:58:32 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:58:32 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:58:32 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:58:32 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:58:32 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:58:32 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:58:32 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:58:32 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:32 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:32 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:58:32 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:58:32 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:58:32 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:32 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:32 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:32 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:32 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:58:32 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:32 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:32 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 09:58:32 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 09:58:39 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 28 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 09:58:39 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 09:58:39 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 09:58:39 UTC] PHP Stack trace:
+[11-Jan-2013 09:58:39 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 09:58:39 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 09:58:39 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 09:58:39 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 09:58:39 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 09:58:39 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 09:58:39 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 09:58:39 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 09:58:39 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 09:58:39 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 09:58:39 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 09:58:39 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:39 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:39 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 09:58:39 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 09:58:39 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 09:58:39 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:39 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 09:58:39 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:39 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 09:58:39 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 09:58:39 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 09:58:39 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 09:58:39 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 09:58:39 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:19:08 UTC] PHP Fatal error:  Maximum function nesting level of '100' reached, aborting! in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element/Multi.php on line 173
+[11-Jan-2013 10:19:08 UTC] PHP Stack trace:
+[11-Jan-2013 10:19:08 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:19:08 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:19:08 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:19:08 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:19:08 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:19:08 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:19:08 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:19:08 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:19:08 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:19:08 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:19:08 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:19:08 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:19:08 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  24. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  25. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  26. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  27. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  28. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  29. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  30. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  31. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  32. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  33. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  34. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  35. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  36. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  37. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  38. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  39. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  40. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  41. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  42. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  43. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  44. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  45. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  46. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  47. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  48. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  49. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  50. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  51. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  52. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  53. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  54. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  55. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  56. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  57. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  58. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  59. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  60. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  61. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  62. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  63. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  64. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  65. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  66. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  67. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  68. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  69. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  70. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  71. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  72. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  73. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  74. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  75. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  76. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  77. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  78. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  79. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  80. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  81. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  82. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  83. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  84. Zend_View_Abstract->escape() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:08 UTC] PHP  85. call_user_func() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:905
+[11-Jan-2013 10:19:08 UTC] PHP  86. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:0
+[11-Jan-2013 10:19:08 UTC] PHP  87. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:08 UTC] PHP  88. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:08 UTC] PHP  89. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  90. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:08 UTC] PHP  91. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  92. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:08 UTC] PHP  93. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:08 UTC] PHP  94. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:08 UTC] PHP  95. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:08 UTC] PHP  96. Zend_Form_Element_Radio->renderViewHelper() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:19:08 UTC] PHP  97. Zend_Form_Element->__call() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:19:08 UTC] PHP  98. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:973
+[11-Jan-2013 10:19:08 UTC] PHP  99. Zend_Form_Element_Multi->getMultiOptions() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php:230
+[11-Jan-2013 10:19:48 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 28 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:19:48 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:19:48 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:19:48 UTC] PHP Stack trace:
+[11-Jan-2013 10:19:48 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:19:48 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:19:48 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:19:48 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:19:48 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:19:48 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:19:48 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:19:48 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:19:48 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:19:48 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:19:48 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:19:48 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:48 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:48 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:19:48 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:19:48 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:19:48 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:48 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:19:48 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:48 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:19:48 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:19:48 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:19:48 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:19:48 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:19:48 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:20:12 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 28 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:20:12 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:20:12 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:20:12 UTC] PHP Stack trace:
+[11-Jan-2013 10:20:12 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:20:12 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:20:12 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:20:12 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:20:12 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:20:12 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:20:12 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:20:12 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:20:12 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:20:12 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:20:12 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:20:12 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:20:12 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:20:12 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:20:12 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:20:12 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:20:12 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:20:12 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:20:12 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:20:12 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:20:12 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:20:12 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:20:12 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:20:12 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:28
+[11-Jan-2013 10:20:12 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:20:46 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 33
+[11-Jan-2013 10:21:07 UTC] PHP Fatal error:  Cannot use object of type Zend_Form_Element_Radio as array in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 32
+[11-Jan-2013 10:21:07 UTC] PHP Stack trace:
+[11-Jan-2013 10:21:07 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:21:07 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:21:07 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:21:07 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:21:07 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:21:07 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:21:07 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:21:07 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:21:07 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:21:07 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:21:07 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:21:07 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:21:07 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:21:07 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:21:07 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:21:07 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:21:07 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:21:07 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:21:07 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:21:07 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:21:07 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:21:07 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:21:07 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:21:26 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 33
+[11-Jan-2013 10:21:33 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 33
+[11-Jan-2013 10:22:47 UTC] Warning: Exception caught by form: Method questionsFlags does not exist
+Stack Trace:
+#0 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(27): Zend_Form->__call('questionsFlags', Array)
+#1 /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml(27): Core_Form_RecapitulatifEnd->questionsFlags('options')
+#2 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#3 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#4 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php(105): Zend_View_Abstract->render('quizz/formRecap...')
+#5 [internal function]: Zend_View_Helper_Partial->partial('quizz/formRecap...', Array)
+#6 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(350): call_user_func_array(Array, Array)
+#7 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View_Abstract->__call('partial', Array)
+#8 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php(175): Zend_View->partial('quizz/formRecap...', Array)
+#9 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2905): Zend_Form_Decorator_ViewScript->render('')
+#10 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php(2921): Zend_Form->render()
+#11 /home/www/tp_certif/application/Core/views/scripts/quizz/recapitulatiffin.phtml(13): Zend_Form->__toString()
+#12 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php(108): include('/home/www/tp_ce...')
+#13 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php(888): Zend_View->_run('/home/www/tp_ce...')
+#14 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(900): Zend_View_Abstract->render('quizz/recapitul...')
+#15 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('quizz/recapitul...', NULL)
+#16 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#17 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#18 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#19 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php(295): Zend_Controller_Action->dispatch('recapitulatiffi...')
+#20 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#21 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php(97): Zend_Controller_Front->dispatch()
+#22 /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#23 /home/www/tp_certif/public/index.php(20): Zend_Application->run()
+#24 {main} dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php à la ligne 2926
+[11-Jan-2013 10:23:42 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 27 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:23:42 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:23:42 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:23:42 UTC] PHP Stack trace:
+[11-Jan-2013 10:23:42 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:23:42 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:23:42 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:23:42 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:23:42 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:23:42 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:23:42 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:23:42 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:23:42 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:23:42 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:23:42 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:23:42 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:42 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:42 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:23:42 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:23:42 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:23:42 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:42 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:42 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:42 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:42 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:23:42 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:42 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:42 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:23:42 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:23:47 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 27 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:23:47 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:23:47 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:23:47 UTC] PHP Stack trace:
+[11-Jan-2013 10:23:47 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:23:47 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:23:47 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:23:47 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:23:47 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:23:47 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:23:47 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:23:47 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:23:47 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:23:47 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:23:47 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:23:47 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:47 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:47 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:23:47 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:23:47 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:23:47 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:47 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:47 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:47 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:47 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:23:47 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:47 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:47 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:23:47 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:23:52 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 27 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:23:52 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:23:52 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:23:52 UTC] PHP Stack trace:
+[11-Jan-2013 10:23:52 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:23:52 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:23:52 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:23:52 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:23:52 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:23:52 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:23:52 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:23:52 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:23:52 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:23:52 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:23:52 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:23:52 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:52 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:52 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:23:52 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:23:52 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:23:52 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:52 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:52 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:52 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:52 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:23:52 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:52 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:52 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:23:52 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:23:54 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::render() must implement interface Zend_View_Interface, string given, called in /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml on line 27 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 2029
+[11-Jan-2013 10:23:54 UTC] Unknown, 4096: Argument 1 passed to Zend_Form_Element::setView() must implement interface Zend_View_Interface, string given, called in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php on line 2036 and defined dans /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php à la ligne 1795
+[11-Jan-2013 10:23:54 UTC] PHP Fatal error:  Call to a member function getHelper() on a non-object in /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewHelper.php on line 241
+[11-Jan-2013 10:23:54 UTC] PHP Stack trace:
+[11-Jan-2013 10:23:54 UTC] PHP   1. {main}() /home/www/tp_certif/public/index.php:0
+[11-Jan-2013 10:23:54 UTC] PHP   2. Zend_Application->run() /home/www/tp_certif/public/index.php:20
+[11-Jan-2013 10:23:54 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application.php:366
+[11-Jan-2013 10:23:54 UTC] PHP   4. Zend_Controller_Front->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Application/Bootstrap/Bootstrap.php:97
+[11-Jan-2013 10:23:54 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Front.php:954
+[11-Jan-2013 10:23:54 UTC] PHP   6. Zend_Controller_Action->dispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Dispatcher/Standard.php:295
+[11-Jan-2013 10:23:54 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action.php:527
+[11-Jan-2013 10:23:54 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/HelperBroker.php:277
+[11-Jan-2013 10:23:54 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:960
+[11-Jan-2013 10:23:54 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:921
+[11-Jan-2013 10:23:54 UTC] PHP  11. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Controller/Action/Helper/ViewRenderer.php:900
+[11-Jan-2013 10:23:54 UTC] PHP  12. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:54 UTC] PHP  13. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:54 UTC] PHP  14. Zend_Form->__toString() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:13
+[11-Jan-2013 10:23:54 UTC] PHP  15. Zend_Form->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2921
+[11-Jan-2013 10:23:54 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form.php:2905
+[11-Jan-2013 10:23:54 UTC] PHP  17. Zend_View->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:54 UTC] PHP  18. Zend_View_Abstract->__call() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Decorator/ViewScript.php:175
+[11-Jan-2013 10:23:54 UTC] PHP  19. call_user_func_array() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:54 UTC] PHP  20. Zend_View_Helper_Partial->partial() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:350
+[11-Jan-2013 10:23:54 UTC] PHP  21. Zend_View_Abstract->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Helper/Partial.php:105
+[11-Jan-2013 10:23:54 UTC] PHP  22. Zend_View->_run() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View/Abstract.php:888
+[11-Jan-2013 10:23:54 UTC] PHP  23. include() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/View.php:108
+[11-Jan-2013 10:23:54 UTC] PHP  24. Zend_Form_Element->render() /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml:27
+[11-Jan-2013 10:23:54 UTC] PHP  25. Zend_Form_Decorator_ViewHelper->render() /usr/local/zend/share/ZendFramework-1.11.12/library/Zend/Form/Element.php:2042
+[11-Jan-2013 10:24:52 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/views/scripts/quizz/formRecapEnd.phtml à la ligne 33
+[11-Jan-2013 10:31:11 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:31:11 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:32:14 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:32:14 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:32:21 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:32:21 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:32:28 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:32:28 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:32:36 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:32:36 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:32:44 UTC] Warning: Missing argument 1 for Core_Service_Quizz::find_void(), called in /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php on line 41 and defined dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 86
+[11-Jan-2013 10:32:44 UTC] Notice: Undefined variable: idQuestionnaire dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 88
+[11-Jan-2013 10:33:47 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 41
+[11-Jan-2013 10:34:26 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 41
+[11-Jan-2013 10:36:49 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 41
+[11-Jan-2013 10:37:11 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 41
+[11-Jan-2013 10:38:59 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/forms/RecapitulatifEnd.php à la ligne 42
+[11-Jan-2013 10:43:55 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 171
+[11-Jan-2013 10:45:15 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 172
+[11-Jan-2013 10:45:36 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 173
+[11-Jan-2013 10:46:12 UTC] Notice: Undefined index: question dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 171
+[11-Jan-2013 10:46:52 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 38
+[11-Jan-2013 10:46:52 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 38
+[11-Jan-2013 11:21:13 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 165
+[11-Jan-2013 11:21:13 UTC] Notice: Undefined variable: tabQuestionsRempli dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 169
+[11-Jan-2013 11:21:55 UTC] Warning: Invalid argument supplied for foreach() dans /home/www/tp_certif/application/Core/services/Quizz.php à la ligne 166

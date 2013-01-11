@@ -9,7 +9,7 @@ endif;
 if (isset($this->question)) {
 ?>
 
-<h2>Question(s) r&eacute;pondu <?php echo $this->nbReponse.'/'.$this->nbQuestion; ?></h2>
+<h2>Question(s) r&eacute;pondu <?php echo (int) $this->nbReponse.'/'.(int)$this->nbQuestion; ?></h2>
 
 <div class="well" >
 <?php

@@ -41,7 +41,6 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     		
     		$tabQuestionsRempli[] = $clequestion;
     	}
-
     	return $listeFlag;
     }
     
@@ -92,14 +91,16 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
 	    	// on filtre les reponses non répondu
 	    	$tabQuestionsRempli = array();
 	    	foreach($this->getSessionReponse()->questions as $clequestion => $reponse ) {
-	    		$tabQuestionsRempli[] = $clequestion;
+	    		if (empty($reponse['resultat'])) $tabQuestionsRempli[] = $clequestion;
+	    		else $tabQuestionsVide[] = $clequestion;
 	    	}
+	    	
 	    	 if ($this->getNbQuestionRepondu() < $this->getNbQuestion()) {
-	    	 	return array_diff($tabQuestions, $tabQuestionsRempli);
+	    	 	//return array_diff($tabQuestions, $tabQuestionsRempli);
+	    	 	return $tabQuestionsRempli;
 	    	 } else {
 	    	 	return reset($tabQuestions);
 	    	 }
-	    	
     	} else {
     		return $tabQuestions;
     	}
@@ -161,10 +162,16 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	
 	// retourne le nombre de question repondu du formulaire
 	public function getNbQuestionRepondu() {
-		if (isset($this->getSessionReponse()->nb))
-			return count($this->getSessionReponse()->questions);
-		else
+		$tabQuestionsRempli = array();
+		if (isset($this->getSessionReponse()->questions)) {
+			foreach($this->getSessionReponse()->questions as $clequestion => $reponse ) {
+				if (!empty($reponse['resultat']))
+					$tabQuestionsRempli[] = $clequestion;
+			}
+			return count($tabQuestionsRempli);
+		} else {
 			return false;
+		}
 	}
 	
 	// enregistre les reponses
@@ -183,20 +190,17 @@ class Core_Service_Quizz extends My_Service_ServiceAbstract
     	}
     	$reponse = trim($reponse, '¨');
     	
-    	// temp
-    	if (!isset($reponses->userId)) {
-    		$this->save_form(1);
-    	}
-    	
+   	
     	if (isset($this->getSessionReponse()->questions[$idReponse])) {
 			unset($this->getSessionReponse()->questions[$idReponse]);
     	}
     	
-    	$this->getSessionReponse()->questions[$idReponse]['id'] = (int) $idReponse;
-    	$this->getSessionReponse()->questions[$idReponse]['flag'] = (int) isset($tab['marquer']);
-    	$this->getSessionReponse()->questions[$idReponse]['resultat'] = $reponse;
-    	$this->getSessionReponse()->questions[$idReponse]['date'] = time();
-    	
+    	if (!empty($reponse) || isset($tab['marquer'])) {
+	    	$this->getSessionReponse()->questions[$idReponse]['id'] = (int) $idReponse;
+	    	$this->getSessionReponse()->questions[$idReponse]['flag'] = (int) isset($tab['marquer']);
+	    	$this->getSessionReponse()->questions[$idReponse]['resultat'] = $reponse;
+	    	$this->getSessionReponse()->questions[$idReponse]['date'] = time();
+    	}
 
     	if (isset($tab['precedent'])) {
     		return $this->prev((int) $idReponse);
